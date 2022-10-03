@@ -1,0 +1,23 @@
+---
+title: "Nien Xiang Tou"
+image: Profilephoto.jfif
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/nxrunning
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/
+    - icon: github
+      text: Github
+      href: https://github.com/nxrunning
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=OsGUOBIAAAAJ&hl=en&oi=ao
+---
+
+Hi, welcome to my personal blog! I am a researcher and a data enthusiast. I am passionate about using data to gain insights and solve problems.
+
+Read more about me [here](about.qmd).

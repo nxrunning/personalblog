@@ -1,0 +1,37 @@
+---
+title: "Your perception is your reality"
+author: "Nien Xiang Tou"
+date: "2019-08-03"
+categories: ["Sport science"]
+image: "image.webp"
+---
+
+We experience a wide range of sensations during exercise. This article highlights the importance of studying perception, especially in the context of regulation of exercise.
+
+![Kenya's Lawrence Cherono battling with Ethopia's Lelisa Desisa in the 2019 Boston Marathon. Source: Winslow Townson/Associated Press](image.webp)
+
+Have you ever stood at the end of a marathon, and witnessed how many people sprinted across the finish line? How is it possible for somebody who slowed down or was walking halfway through the race and yet managed to run the fastest right at the end of the race?
+
+This is the end-spurt phenomenon commonly seen in endurance events among elites as well as the recreational athletes. Such phenomenon challenges the concept of fatigue, and this was exactly what sparked my interest in pursuing my PhD study that aims to better understand individual's perceptual responses in self-regulation of exercise.
+
+Traditionally, it has been thought that fatigue stems from your physiological limits. From such a perspective, why somebody slows down during a race is completely due to physiological reasons such as depletion of muscle glycogen, lactate, environmental stress or the inability of your heart to supply enough oxygen to the muscles. As a result, the athlete is unable to recruit more muscle fibers to meet the exercise demands and hence slowing down. However, if such hypothesis is true, it is not possible for the athlete to speed up at the end of the race when he or she is supposed to feel the most exhausted.
+
+## The Central Governor
+
+This paradox was first challenged by famous South African sport scientist, Professor Tim Noakes, who also authored the running bible, *Lore of Running*. In 1996, he delivered the prestigious J. B. Wolffe Memorial Lecture at the American College of Sports Medicine (ACSM) conference. He pointed out that most people did not die running a marathon, which meant they could have ran faster during the race. Therefore, the traditional physiological model was flawed. He later went on to publish a new theoretical model to explain regulation of exercise performance, termed the "Central Governor", which remains a hot debating topic in the sports science domain to date.
+
+This model postulates that exercise performance is regulated by a centralized control center, the brain. Exercise performance is regulated in a manner based on constant feedback between the body and the brain. As we push the limits of our body, the brain generates a whole range of sensations consciously felt by us. The sensations felt during exercise are not the consequences of fatigue, but a protective mechanism to ensure that we complete our exercise in a safe manner. In short, the brain stops us from exercising to the point that we kill ourselves.
+
+## Why study perception?
+
+It is important to understand that in the context of an endurance event such as a marathon, athletes regulate their exercise performance in an anticipatory manner. This means individuals including novice runners naturally try to pace themselves in a sustainable manner to complete the race. Research have empirically shown that athletes slow down way before they reach the critical core temperature, and before the glycogen tank completely empties. Regulation of exercise is based on the perceived sensations during exercise, which help to provide feedback on finding the balance between safety and performance.
+
+Why is there a need to study perceptual responses in sports given the tools to monitor a myriad of objective physiological measures such as heart rate, oxygen consumption and blood lactate? This is because when you think you have reached your point of exhaustion during exercise, the truth is you didn't.
+
+> **It is a perceived failure, and not a true failure.**
+
+It is quite impossible to run yourself to true failure in the context of exercise performance. Your true performance probably only happens when you face a life-and-death situation, such as being chased by a lion. This differentiation between a perceived and true failure is very important, as perceptual responses can be influenced by many other factors besides physiological variables.
+
+This is the reason why placebo and psychological effects can affect performance. These effects alter your perceptual responses, and hence your performance. In the words of an Italian sport physiologist, Professor Samuele Marcora, effort perception is claimed to be the "cardinal exercise stopper". Therefore, whatever factors that can influence your perception can ultimately influence your exercise performance.
+
+Your perception is in fact your reality.

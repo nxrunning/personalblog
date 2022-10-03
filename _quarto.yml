@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Nien Xiang Tou"
+  navbar:
+    right:
+      - text: About
+        href: about.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Publications
+        href: Publications.qmd
+      - icon: twitter
+        href: https://twitter.com/nxrunning
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/
+      - icon: github
+        href: https://github.com/nxrunning
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    highlight-style: eiffel
+
+editor: visual
+

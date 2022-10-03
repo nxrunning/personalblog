@@ -1,0 +1,39 @@
+---
+title: " "
+about:
+  template: marquee
+---
+
+# **Publications**
+
+Please find my research work below.
+
+## [Journal Articles]{style="color: navy"}
+
+Liu, X., **Tou, N. X.**, Gao, Q., Gwee, X., Wee, S. L., & Ng, T. P. (2022). Frailty and risk of cardiovascular disease and mortality. *PloS One*, *17*(9), e0272527. <https://doi.org/10.1371/journal.pone.0272527>
+
+**Tou, N. X.**, Wee, S. L., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., \... & Ng, T. P. (2022). Association of fat mass index versus appendicular lean mass index with physical function--The Yishun Study. *Aging and Health Research*, *2*(3), 100097. <https://doi.org/10.1016/j.ahr.2022.100097>
+
+Chen, K. K., Lee, S. Y., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., **Tou, N. X**., \... & Wee, S. L. (2022). Associations of low handgrip strength and hand laterality with cognitive function and functional mobility--the Yishun Study. *BMC Geriatrics*, *22*(1), 1-8. <https://doi.org/10.1186/s12877-022-03363-2>
+
+Yu, C. C., **Tou, N. X.**, & Low, J. A. (2022). A comparative study on mental health and adaptability between older and younger adults during the COVID-19 circuit breaker in Singapore. *BMC Public Health, 22*(1), 1-11. <https://doi.org/10.1186/s12889-022-12857-y>
+
+**Tou, N. X.**, Wee, S. L., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., \... & Ng, T. P. (2021). Associations of fat mass and muscle function but not lean mass with cognitive impairment: The Yishun Study. *Plos One, 16*(8), e0256702. <https://doi.org/10.1371/journal.pone.0256702>
+
+**Tou, N. X.**, Wee, S. L., Seah, W. T., Ng, D. H. M., Pang, B. W. J., Lau, L. K., & Ng, T. P. (2021). Effectiveness of Community-Delivered Functional Power Training Program for Frail and Pre-frail Community-Dwelling Older Adults: a Randomized Controlled Study. *Prevention Science, 22*, 1048-1059. <https://doi.org/10.1007/s11121-021-01221-y>​
+
+Choo, P. L., **Tou, N. X.**, Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., \... & Wee, S. L. (2021). Timed up and go (tug) reference values and predictive cutoffs for fall risk and disability in singaporean community-dwelling adults: Yishun Cross-Sectional Study and Singapore Longitudinal Aging Study. *Journal of the American Medical Directors Association, 22*(8), 1640-1645. <https://doi.org/10.1016/j.jamda.2021.03.002>
+
+​**Tou, N. X.**, Kee, Y. H., Koh, K. T., Camiré, M., & Chow, J. Y. (2020). Singapore teachers' attitudes towards the use of information and communication technologies in physical education. European *Physical Education Review, 26*(2), 481-494. [https://doi.org/10.1177/1356336X19869734](https://doi.org/10.1177%2F1356336X19869734)
+
+## [Conference Papers Published in Proceedings]{style="color: navy"}
+
+**Tou, N. X.**, Balasekaran, G., & Barbosa, T. M. (2021). Influence Of Exercise Experience On Perception Of Prescribed And Preferred Exercise Intensity. Medicine & Science in Sports & Exercise, 53(8S), 10-11. <http://doi.org/10.1249/01.mss.0000759152.24965.1c>
+
+**Tou, N. X.**, Balasekaran, G., & Barbosa, T. M. (2020). Effects of mental fatigue on maximal exercise test performance in physically active and sedentary adults. Medicine & Science in Sports & Exercise, 52(7S), 626. <https://doi.org/10.1249/01.mss.0000681104.26974.97> 
+
+**Tou, N.X.**, Balasekaran, G., Thor, D., Tan, I., & Lim, Z. Y. (2017). Validation Of A 10 point OMNI Rating Of Perceived Exertion Colored Scale. Medicine & Science in Sports & Exercise, 49(5S), 754. <https://doi.org/10.1249/01.mss.0000519006.11251.49>
+
+## [Others]{style="color: navy"}
+
+**Towards Data Science.** Combining Python and R for FIFA Football World Ranking Analysis**.** <https://towardsdatascience.com/combining-python-and-r-for-fifa-football-world-ranking-analysis-d71bb6ceacdb>

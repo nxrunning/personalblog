@@ -1,0 +1,25 @@
+---
+title: "Nien Xiang Tou, PhD"
+image: Profilephoto.jfif
+about:
+  template: trestles
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/nxrunning
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/
+    - icon: github
+      text: Github
+      href: https://github.com/nxrunning
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=OsGUOBIAAAAJ&hl=en&oi=ao
+---
+
+I am a Research Fellow at Geriatric Education and Research Institute, Singapore. My background is in sports science, and I previously attained my PhD from Nanyang Technological University, Singapore. My present research work focuses on exercise and physical activity to promote healthy ageing and extend the health span of older adults.
+
+Data and numbers make me tick. This blog documents my personal projects and my learning journey in programming languages such as R and Python. I write about various topics including statistics, data science, data visualisation, coding and sport science.
+
+All views expressed here are my own.
