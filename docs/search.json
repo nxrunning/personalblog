@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Nien Xiang Tou, PhD",
+    "section": "",
+    "text": "Data and numbers make me tick. This blog documents my personal projects and my learning journey in programming languages such as R and Python. I write about various topics including statistics, data science, data visualisation, coding and sport science.\nAll views expressed here are my own."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nAug 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 3, 2019\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nien Xiang Tou",
+    "section": "",
+    "text": "Read more about me here."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/Your-perception-is-your-reality/index.html",
+    "href": "posts/Your-perception-is-your-reality/index.html",
+    "title": "Your perception is your reality",
+    "section": "",
+    "text": "We experience a wide range of sensations during exercise. This article highlights the importance of studying perception, especially in the context of regulation of exercise.\nHave you ever stood at the end of a marathon, and witnessed how many people sprinted across the finish line? How is it possible for somebody who slowed down or was walking halfway through the race and yet managed to run the fastest right at the end of the race?\nThis is the end-spurt phenomenon commonly seen in endurance events among elites as well as the recreational athletes. Such phenomenon challenges the concept of fatigue, and this was exactly what sparked my interest in pursuing my PhD study that aims to better understand individual’s perceptual responses in self-regulation of exercise.\nTraditionally, it has been thought that fatigue stems from your physiological limits. From such a perspective, why somebody slows down during a race is completely due to physiological reasons such as depletion of muscle glycogen, lactate, environmental stress or the inability of your heart to supply enough oxygen to the muscles. As a result, the athlete is unable to recruit more muscle fibers to meet the exercise demands and hence slowing down. However, if such hypothesis is true, it is not possible for the athlete to speed up at the end of the race when he or she is supposed to feel the most exhausted."
+  },
+  {
+    "objectID": "posts/Your-perception-is-your-reality/index.html#the-central-governor",
+    "href": "posts/Your-perception-is-your-reality/index.html#the-central-governor",
+    "title": "Your perception is your reality",
+    "section": "The Central Governor",
+    "text": "The Central Governor\nThis paradox was first challenged by famous South African sport scientist, Professor Tim Noakes, who also authored the running bible, Lore of Running. In 1996, he delivered the prestigious J. B. Wolffe Memorial Lecture at the American College of Sports Medicine (ACSM) conference. He pointed out that most people did not die running a marathon, which meant they could have ran faster during the race. Therefore, the traditional physiological model was flawed. He later went on to publish a new theoretical model to explain regulation of exercise performance, termed the “Central Governor”, which remains a hot debating topic in the sports science domain to date.\nThis model postulates that exercise performance is regulated by a centralized control center, the brain. Exercise performance is regulated in a manner based on constant feedback between the body and the brain. As we push the limits of our body, the brain generates a whole range of sensations consciously felt by us. The sensations felt during exercise are not the consequences of fatigue, but a protective mechanism to ensure that we complete our exercise in a safe manner. In short, the brain stops us from exercising to the point that we kill ourselves."
+  },
+  {
+    "objectID": "posts/Your-perception-is-your-reality/index.html#why-study-perception",
+    "href": "posts/Your-perception-is-your-reality/index.html#why-study-perception",
+    "title": "Your perception is your reality",
+    "section": "Why study perception?",
+    "text": "Why study perception?\nIt is important to understand that in the context of an endurance event such as a marathon, athletes regulate their exercise performance in an anticipatory manner. This means individuals including novice runners naturally try to pace themselves in a sustainable manner to complete the race. Research have empirically shown that athletes slow down way before they reach the critical core temperature, and before the glycogen tank completely empties. Regulation of exercise is based on the perceived sensations during exercise, which help to provide feedback on finding the balance between safety and performance.\nWhy is there a need to study perceptual responses in sports given the tools to monitor a myriad of objective physiological measures such as heart rate, oxygen consumption and blood lactate? This is because when you think you have reached your point of exhaustion during exercise, the truth is you didn’t.\n\nIt is a perceived failure, and not a true failure.\n\nIt is quite impossible to run yourself to true failure in the context of exercise performance. Your true performance probably only happens when you face a life-and-death situation, such as being chased by a lion. This differentiation between a perceived and true failure is very important, as perceptual responses can be influenced by many other factors besides physiological variables.\nThis is the reason why placebo and psychological effects can affect performance. These effects alter your perceptual responses, and hence your performance. In the words of an Italian sport physiologist, Professor Samuele Marcora, effort perception is claimed to be the “cardinal exercise stopper”. Therefore, whatever factors that can influence your perception can ultimately influence your exercise performance.\nYour perception is in fact your reality."
+  },
+  {
+    "objectID": "Publications.html",
+    "href": "Publications.html",
+    "title": "Nien Xiang Tou",
+    "section": "",
+    "text": "Please find my research work below.\n\n\nLiu, X., Tou, N. X., Gao, Q., Gwee, X., Wee, S. L., & Ng, T. P. (2022). Frailty and risk of cardiovascular disease and mortality. PloS One, 17(9), e0272527. https://doi.org/10.1371/journal.pone.0272527\nTou, N. X., Wee, S. L., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., ... & Ng, T. P. (2022). Association of fat mass index versus appendicular lean mass index with physical function–The Yishun Study. Aging and Health Research, 2(3), 100097. https://doi.org/10.1016/j.ahr.2022.100097\nChen, K. K., Lee, S. Y., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., Tou, N. X., ... & Wee, S. L. (2022). Associations of low handgrip strength and hand laterality with cognitive function and functional mobility–the Yishun Study. BMC Geriatrics, 22(1), 1-8. https://doi.org/10.1186/s12877-022-03363-2\nYu, C. C., Tou, N. X., & Low, J. A. (2022). A comparative study on mental health and adaptability between older and younger adults during the COVID-19 circuit breaker in Singapore. BMC Public Health, 22(1), 1-11. https://doi.org/10.1186/s12889-022-12857-y\nTou, N. X., Wee, S. L., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., ... & Ng, T. P. (2021). Associations of fat mass and muscle function but not lean mass with cognitive impairment: The Yishun Study. Plos One, 16(8), e0256702. https://doi.org/10.1371/journal.pone.0256702\nTou, N. X., Wee, S. L., Seah, W. T., Ng, D. H. M., Pang, B. W. J., Lau, L. K., & Ng, T. P. (2021). Effectiveness of Community-Delivered Functional Power Training Program for Frail and Pre-frail Community-Dwelling Older Adults: a Randomized Controlled Study. Prevention Science, 22, 1048-1059. https://doi.org/10.1007/s11121-021-01221-y​\nChoo, P. L., Tou, N. X., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., ... & Wee, S. L. (2021). Timed up and go (tug) reference values and predictive cutoffs for fall risk and disability in singaporean community-dwelling adults: Yishun Cross-Sectional Study and Singapore Longitudinal Aging Study. Journal of the American Medical Directors Association, 22(8), 1640-1645. https://doi.org/10.1016/j.jamda.2021.03.002\n​Tou, N. X., Kee, Y. H., Koh, K. T., Camiré, M., & Chow, J. Y. (2020). Singapore teachers’ attitudes towards the use of information and communication technologies in physical education. European Physical Education Review, 26(2), 481-494. https://doi.org/10.1177/1356336X19869734\n\n\n\nTou, N. X., Balasekaran, G., & Barbosa, T. M. (2021). Influence Of Exercise Experience On Perception Of Prescribed And Preferred Exercise Intensity. Medicine & Science in Sports & Exercise, 53(8S), 10-11. http://doi.org/10.1249/01.mss.0000759152.24965.1c\nTou, N. X., Balasekaran, G., & Barbosa, T. M. (2020). Effects of mental fatigue on maximal exercise test performance in physically active and sedentary adults. Medicine & Science in Sports & Exercise, 52(7S), 626. https://doi.org/10.1249/01.mss.0000681104.26974.97 \nTou, N.X., Balasekaran, G., Thor, D., Tan, I., & Lim, Z. Y. (2017). Validation Of A 10 point OMNI Rating Of Perceived Exertion Colored Scale. Medicine & Science in Sports & Exercise, 49(5S), 754. https://doi.org/10.1249/01.mss.0000519006.11251.49\n\n\n\nTowards Data Science. Combining Python and R for FIFA Football World Ranking Analysis. https://towardsdatascience.com/combining-python-and-r-for-fifa-football-world-ranking-analysis-d71bb6ceacdb"
+  }
+]
