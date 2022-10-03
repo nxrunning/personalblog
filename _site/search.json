@@ -11,7 +11,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nAug 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nFeb 20, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nFeb 9, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 8, 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 3, 2019\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nAug 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualisation\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nMar 24, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nFeb 20, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nFeb 9, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 8, 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 3, 2019\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -159,5 +159,33 @@
     "title": "Web Scraping and Data Visualising with R: EPL 19/20 Goal Stats",
     "section": "6. Dividing teams into four clusters",
     "text": "6. Dividing teams into four clusters\nTo better visualise the separation in performance, we can represent each quadrant in different colours. First, we create a new column in the spreadsheet and name it cluster. The code below will separate each team into their respective clusters based on their goal stats.\n#Creating a cluster column\ndf$Cluster = 0\n\n#Using for loop and ifelse statements to create different clusters \nfor(i in 1: nrow(df)) {\n  if (df$Goals_for[i] > mean(df$Goals_for) & df$Goals_against[i] < mean(df$Goals_against)) {\n    df$Cluster[i] = 1\n  } else if (df$Goals_for[i] < mean(df$Goals_for) & df$Goals_against[i] < mean(df$Goals_against)) {\n    df$Cluster[i] = 2 \n  } else if (df$Goals_for[i] > mean(df$Goals_for) & df$Goals_against[i] > mean(df$Goals_against)) {\n    df$Cluster[i] = 3\n  } else {\n    df$Cluster[i] = 4\n  }\n}\n\n#Making the cluster columns a factor\ndf$Cluster = factor(df$Cluster, levels = c(1, 2, 3, 4), \n                    labels = \n                    c(\"Strong attack\\nStrong defence\",\n                    \"Poor attack\\nStrong defence\",\n                    \"Strong attack\\nPoor defence\",\n                    \"Poor attack\\nPoor defence\"))\n                    \nNext, we will use the ggplot2 library to visualise our data. The comments in green help to explain each respective line of code.\n#Specifying the variables and using colours to represent each cluster\nggplot(df, aes(x = Goals_for, y = Goals_against, label = Teams, colour = Cluster))+\n  #Plotting each team on the graph using a geometric point\n  geom_point()+\n  #Plotting the vertical dotted line to represent the average goals scored\n  geom_vline(xintercept=mean(Goals_for), linetype=\"dashed\", \n  alpha = 0.4, colour = \"red\") +\n  #Plotting the horizontal dotted line to represent the average goals conceded\n  geom_hline(yintercept=mean(Goals_against), linetype=\"dashed\", \n  alpha = 0.4, colour = \"red\") +\n  #Geom_text_repel helps to avoid overlapping of labels in the points\n  geom_text_repel(aes(Goals_for, Goals_against, label = Teams), \n                  size = 2, colour = \"black\", fontface = \"bold\")+\n  #Labelling of axes and title\n  labs(title = \"EPL 2019/2020: Goals For vs Goals Against\",\n       x = \"Goals For\", y = \"Goals Against\",\n       colour = \" \")+\n  #Specifying position of the legend\n  theme(legend.position = \"top\")\n\n#Save the plot in your working directory\nggsave(\"output.jpeg\", dpi = 300)\n                    \nThe resulting plot is below.\n\n\n\n\n\nFull code for this article can be accessed through my github.\nPS: If you actually count the number of points on the plot, there are only 19 instead of 20. This is because Newcastle and Watford happen to have exactly the same goal stats at the time of writing."
+  },
+  {
+    "objectID": "posts/Animated-data-viz-covid19/index.html",
+    "href": "posts/Animated-data-viz-covid19/index.html",
+    "title": "Animated Data Visualisation of Covid-19",
+    "section": "",
+    "text": "Number of infected cases and deaths around the world continues to rise daily. This article visualises how the pandemic has evolved in certain countries using animated line plots on R."
+  },
+  {
+    "objectID": "posts/Animated-data-viz-covid19/index.html#china-breakout",
+    "href": "posts/Animated-data-viz-covid19/index.html#china-breakout",
+    "title": "Animated Data Visualisation of Covid-19",
+    "section": "China Breakout",
+    "text": "China Breakout\nWhilethe true origin of the virus remains debatable, the very first reported covid-19 case was detected in Wuhan City, Hubei Province of China. Since then, the numbers have skyrocketed. Using the numbers reported in the daily situation reports by World Health Organization (WHO), let’s visualise how the outbreak has developed since 1st February 2020 using gganimate on R.\n\n\n\n\n\nThe figure above illustrates how the number of cases increased day by day. The exact dates are reflected in the subtitle. Over the period of almost two months, the number of confirmed cases has increased from 11821 to 81601 at the point of writing. From the graph, we can see a sharp increase in cases on 14th February. It can also be seen that the rate of increase seems to decline since March."
+  },
+  {
+    "objectID": "posts/Animated-data-viz-covid19/index.html#southeast-asia",
+    "href": "posts/Animated-data-viz-covid19/index.html#southeast-asia",
+    "title": "Animated Data Visualisation of Covid-19",
+    "section": "Southeast Asia",
+    "text": "Southeast Asia\nNext, let’s visualise how the virus has developed closer to home. The figure below illustrates the breakout in certain Southeast Asian countries.\n\n\n\n\n\nAt the start of February, Singapore was leading the charts over its neighbours. Things have changed very quickly since early March. The number of reported cases in Malaysia surpassed Singapore on 15th March. Presently, the pandemic is faring much worse in many other Southeast Asian countries as compared to Singapore."
+  },
+  {
+    "objectID": "posts/Animated-data-viz-covid19/index.html#rest-of-the-world",
+    "href": "posts/Animated-data-viz-covid19/index.html#rest-of-the-world",
+    "title": "Animated Data Visualisation of Covid-19",
+    "section": "Rest of the World",
+    "text": "Rest of the World\nCovid-19 was announced a pandemic on 11th March 2020 given the alarming levels of the virus outbreak. In such a connected world today, it was hard for any countries to get off the hook. Let’s take a look at some other notable countries being hit.\n\n\n\n\n\nThe graph clearly shows the trajectories of the virus spread differ between countries. For example, there was a sharp increase in number of cases in South Korea during the second half of February. The rate of increase quickly slowed in March. On the other hand, Italy is still facing an exponential manner of spread at the moment. Based on the figures, we can infer the extent of success in countries’ attempt to contain the virus.\nData visualisation code and dataset can be found on my github."
   }
 ]
