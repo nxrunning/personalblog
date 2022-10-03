@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nien Xiang Tou">
-<meta name="dcterms.date" content="2020-03-24">
+<meta name="dcterms.date" content="2020-05-16">
 
-<title>Nien Xiang Tou - Animated Data Visualisation of Covid-19</title>
+<title>Nien Xiang Tou - Pace variation in Marathon running: Analysing data from Standard Chartered Singapore Marathon 2019</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,9 +112,9 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Animated Data Visualisation of Covid-19</h1>
+      <h1 class="title">Pace variation in Marathon running: Analysing data from Standard Chartered Singapore Marathon 2019</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Data visualisation</div>
+                <div class="quarto-category">Sport science</div>
               </div>
                   </div>
   </div>
@@ -132,7 +132,7 @@ ul.task-list{list-style: none;}
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 24, 2020</p>
+        <p class="date">May 16, 2020</p>
       </div>
     </div>
       
@@ -149,43 +149,37 @@ ul.task-list{list-style: none;}
 
 
 
-<p>Number of infected cases and deaths around the world continues to rise daily. This article visualises how the pandemic has evolved in certain countries using animated line plots on R.</p>
+<p>Pacing strategy is an important determinant of performance, especially in endurance events such as the marathon. Does pacing profile differ across runners of different levels? This blog post examines the pace variation of Singaporean male and female runners in the Standard Chartered Singapore Marathon (SCSM) 2019.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="image.webp" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Illustration of the coronavirus particle. Source: Centers for Disease Control and Prevention</figcaption><p></p>
+<p><img src="image.webp" width="680" height="400" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">SCMS 2019. Source: RunSociety.com</figcaption><p></p>
 </figure>
 </div>
-<section id="china-breakout" class="level2">
-<h2 class="anchored" data-anchor-id="china-breakout">China Breakout</h2>
-<p>Whilethe true origin of the virus remains debatable, the very first reported covid-19 case was detected in Wuhan City, Hubei Province of China. Since then, the numbers have skyrocketed. Using the numbers reported in the daily situation reports by World Health Organization (WHO), let’s visualise how the outbreak has developed since 1st February 2020 using <em>gganimate</em> on R.</p>
+<section id="art-of-pacing" class="level2">
+<h2 class="anchored" data-anchor-id="art-of-pacing">Art of Pacing</h2>
+<p>Pacing strategy in long-distance running refers to the distribution of running speed across the whole duration of event. Finding an optimised pacing strategy in a marathon event is no easy feat, as the distance often poses many uncertainties and unexpected challenges. Too conservative start may lead to a sub-optimal finish, while an aggressive start may result in early fatigue and excessive slowing down during latter stages of the race.</p>
+<p>Generally, there are three types of pacing profiles: 1) negative, 2) positive, and 3) even pacing strategy. First, negative pacing refers to an increase in speed over the duration of event. This will mean running the second half of the race faster than the first half. Second, positive pacing is characterised by a decline in speed instead. Third, even pacing represents keeping relatively the same speed throughout the event. Such even pacing was observed in Eliud Kipchoge’s shattering of the 2 hour marathon barrier last year. If you look at his time <a href="https://www.flotrack.org/articles/6573663-eliud-kipchoge-shatters-two-hour-barrier-with-15940-marathon"><u>splits</u></a>, he and his pacing team ran each 5km within a range of 14:10 - 14:14. This suggests that adopting an even pacing profile in the marathon may be the most ideal strategy to hit your race goals.</p>
+<p>Realistically, this is a tall order and gets increasingly harder to achieve as the race distance increases. Very often, we see drastic changes in running speed during endurance events. For example, we see more race participants walking in the second half of the marathon as compared to the first half. This is an expected phenomenon since fatigue kicks in as the race progresses. However, is such variation in pace similar across all levels of runners?</p>
+<p>With the aim to answer this question, I scraped the time splits of all Singaporean runners who finished the full marathon in last year’s SCSM. The web scraping was performed using the pandas and BeautifulSoup package in python. You may find the full web scraping code <a href="https://github.com/nxrunning/codelibrary/blob/scsm-pacing-variation/webscrapingtimesplits">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="image2.gif" class="img-fluid figure-img"></p>
+<p><img src="image2.webp" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>The figure above illustrates how the number of cases increased day by day. The exact dates are reflected in the subtitle. Over the period of almost two months, the number of confirmed cases has increased from 11821 to 81601 at the point of writing. From the graph, we can see a sharp increase in cases on 14th February. It can also be seen that the rate of increase seems to decline since March.</p>
+<p>Based on the official results from the race website, a total of 3929 Singaporean men and 911 women completed the full marathon. Clearly, the marathon is not as popular among females than their male counterparts. Data on each 5km time split was retrieved for each runner. However, several runners were found with missing data for certain distances. Hence, for runners with missing time splits, it was assumed that their pace remained the same as the last recorded time split. Runners with missing data for the first 5km and 10km were considered invalid and removed from the dataset. Thus, I ended up with a total of 3886 men and 902 women for the analysis.</p>
+<p>The coefficient of variation (CV) was used to measure the variation in each runner’s pace throughout the race. This was simply computed by dividing the standard deviation of all time splits by the mean speed. Higher CVs represent greater variation in pace and lower CVs indicate more consistency in running speed throughout the race. The CV was compared among three groups of runners in both gender groups: fast, mid-pack and slow. The fast group represents the top 20%, the mid-pack represents the middle 20%, and the slow group represents the bottom 20%. The notched box plots above illustrate the average running speed distribution of each group separated by genders. Evidently, the speeds differed significantly across groups for both genders.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image3.webp" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The graph above presents the average CV scores in percentages of respective groups for both genders. We can see a trend that pace variation increases with slower marathon running times. Using a statistical test (one-way ANOVA) informed us that the differences in pace variation across groups were significant. The top 20% Singaporean male runners had an average of 12.11% in their marathon pace variation, and this was significantly less than the mid-pack (14.93%) and the slow group (15.59%). However, the mid-pack and slow groups showed comparably similar variation in pace. Similarly, for the females, the fast group (8.14%) showed significantly less variation in their pace than their slower counterparts. The mid-pack group (12.8%) also differed significantly as compared to the slow group (15.32%).</p>
 </section>
-<section id="southeast-asia" class="level2">
-<h2 class="anchored" data-anchor-id="southeast-asia">Southeast Asia</h2>
-<p>Next, let’s visualise how the virus has developed closer to home. The figure below illustrates the breakout in certain Southeast Asian countries.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="image3.gif" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>At the start of February, Singapore was leading the charts over its neighbours. Things have changed very quickly since early March. The number of reported cases in Malaysia surpassed Singapore on 15th March. Presently, the pandemic is faring much worse in many other Southeast Asian countries as compared to Singapore.</p>
-</section>
-<section id="rest-of-the-world" class="level2">
-<h2 class="anchored" data-anchor-id="rest-of-the-world">Rest of the World</h2>
-<p>Covid-19 was announced a pandemic on 11th March 2020 given the alarming levels of the virus outbreak. In such a connected world today, it was hard for any countries to get off the hook. Let’s take a look at some other notable countries being hit.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="image4.gif" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>The graph clearly shows the trajectories of the virus spread differ between countries. For example, there was a sharp increase in number of cases in South Korea during the second half of February. The rate of increase quickly slowed in March. On the other hand, Italy is still facing an exponential manner of spread at the moment. Based on the figures, we can infer the extent of success in countries’ attempt to contain the virus.</p>
-<p>Data visualisation code and dataset can be found on my <a href="https://github.com/nxrunning/codelibrary/tree/nxrunning-covid19">github</a>.</p>
+<section id="importance-of-consistency-in-pacing" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-consistency-in-pacing">Importance of consistency in pacing</h2>
+<p>These numbers highlighted that better performing runners were not only faster in their speed, they also exhibited considerably less variation in their marathon running pace. Obviously, many factors can influence a marathon performance. One aspect is definitely optimising your pacing strategy during the race. This means selecting a pace that you can sustain consistently with minimal variation throughout the race. This is an important takeaway for all levels of runners. Hence, do practise your pacing strategy during training, and carefully plan your pace for race day. It will probably make a difference!</p>
+<p>Data processing, analysis and visualisation were performed on R. Full code and datasets can be found <a href="https://github.com/nxrunning/codelibrary/tree/scsm-pacing-variation"><u>here</u></a>.</p>
 
 
 </section>
