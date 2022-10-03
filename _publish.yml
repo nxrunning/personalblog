@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 722387d1-bb23-4993-b0c6-7ef16fb0dd3b
+      url: 'https://www.nienxiangtou.com'
