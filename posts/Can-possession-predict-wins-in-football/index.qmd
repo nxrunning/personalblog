@@ -2,7 +2,7 @@
 title: "Can possession predict wins in football?"
 author: "Nien Xiang Tou"
 date: "2019-08-08"
-categories: ["Data science"]
+categories: ["Data science", "Football"]
 image: "image.webp"
 ---
 
