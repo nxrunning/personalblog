@@ -2,7 +2,7 @@
 title: "Animated Data Visualisation of Covid-19"
 author: "Nien Xiang Tou"
 date: "2020-03-24"
-categories: ["Data Visualisation"]
+categories: ["Data visualisation"]
 image: "image.webp"
 ---
 

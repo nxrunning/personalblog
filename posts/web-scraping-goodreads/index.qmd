@@ -2,7 +2,7 @@
 title: "Web Scraping Goodreads with BeautifulSoup: Popular runnning books"
 author: "Nien Xiang Tou"
 date: "2020-05-01"
-categories: ["Data Science"]
+categories: ["Data science"]
 image: "image.webp"
 ---
 
