@@ -2,9 +2,10 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/lactate-paradox/index.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html",
+      "/posts/web-scraping-goodreads/index.html",
+      "/posts/lactate-paradox/index.html",
       "/posts/Animated-data-viz-covid19/index.html",
       "/posts/web-scraping-and-data-visualising-with-R-EPL19/20-goal-stats/index.html",
       "/posts/Is-the-EPL-getting-more-competitive/index.html",
