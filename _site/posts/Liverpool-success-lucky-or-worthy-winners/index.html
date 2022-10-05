@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nien Xiang Tou">
+<meta name="dcterms.date" content="2020-07-02">
+<meta name="description" content="This post examines whether Liverpool’s title winning success is attributed to luck or genuine performance based on the expected goals metric.">
+
+<title>Nien Xiang Tou - Liverpool’s success: Lucky or worthy winners?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nien Xiang Tou</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">Blog</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Publications.html">Publications</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nxrunning"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nxrunning"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#expected-goals" id="toc-expected-goals" class="nav-link active" data-scroll-target="#expected-goals">Expected Goals</a></li>
+  <li><a href="#expected-goal-difference" id="toc-expected-goal-difference" class="nav-link" data-scroll-target="#expected-goal-difference">Expected Goal Difference</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Liverpool’s success: Lucky or worthy winners?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Football</div>
+    <div class="quarto-category">Data visualisation</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    This post examines whether Liverpool’s title winning success is attributed to luck or genuine performance based on the expected goals metric.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nien Xiang Tou </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 2, 2020</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>Liverpool was announced the champions of English Premier League (EPL) season 19/20 with a record of seven games remaining. 23 points separate them from second-placed Manchester City. This post examines whether such overwhelming dominance over their rivals is attributed to sheer luck or genuine strength of the team through visualisation of expected goal data.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../posts/Liverpool-success-lucky-or-worthy-winners/image.webp" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Source: This is Anfield</figcaption><p></p>
+</figure>
+</div>
+<p>Football results do not necessarily reflect the performance of respective teams accurately. It is not always the case that the winning team has higher number of goal-scoring opportunities or greater possession than their opposition. Sometimes, teams walk away with a result merely due to good fortune. How do we differentiate between luck and performance?</p>
+<section id="expected-goals" class="level2">
+<h2 class="anchored" data-anchor-id="expected-goals">Expected Goals</h2>
+<p>Evaluation of a team’s underlying performance at goal is made possible with the expected goals (xG) metric. The metric defines the probability of a shot being scored based on multiple factors such as angle, distance and type of assist. This is well-explained with various examples in the video link <a href="https://www.youtube.com/watch?v=w7zPZsLGK18&amp;feature=emb_logo">here</a> by Opta, a football data analytics company. Such measure provides us with further insights beyond the match statistics that are typically shown.</p>
+<p>Football history has demonstrated that goals could be scored by players of different positions, including the goalkeeper. Some came from clear goal-scoring chances, while some were scored from very unexpected situations. For example, Asmir Begovic, goalkeeper of Stoke City, scored from his own penalty box in 2013. The xG metric would have informed us that the attempt had very low odds of hitting the back of the net. It is reasonable to consider that such abnormal and unexpected goals were just teams being lucky.</p>
+<p>Theoretically, the team with better goal-scoring opportunities should register more goals. However, this is not the case in reality due to various factors and interaction effects in a football game. Therefore, comparison between expected and actual goals could help us differentiate chance occurrences and deserving performances. Scoring much more actual than expected goals would suggest a lucky outing for the team.</p>
+<p>xG is not commonly reported because such information is not readily available online, as the probabilities are computed based on trained models using historical data. Some sites charge fees for these data. Fortunately, <a href="https://understat.com/">Understat.com</a> provides free access to xG statistics based on their algorithms. Data was scraped using BeautifulSoup package in python to examine whether Liverpool’s impressive season so far (31 fixtures) was a fluke or genuine prowess. You may find the web scraping code template on my github <a href="https://github.com/nxrunning/codelibrary/blob/nxrunning-webscrapingxGstatistics/Webscraping%20Understat%20based%20on%20football%20team.ipynb">here</a>.</p>
+<p><img src="../../posts/Liverpool-success-lucky-or-worthy-winners/image2.webp" class="img-fluid"> The area plot above illustrates the comparison between actual and expected goals for Liverpool this season so far. The first important point is observing how xG approximates actual goals closely most of the time, which highlights the predictive value of the metric. Another interpretation of the plot is that Liverpool was expected to score at least one goal in most matches (29 to be precise). This is not surprising given that they are second in the league’s goal rankings. This suggests that Liverpool was quite consistent in producing goal-scoring opportunities.</p>
+<p>The visible grey areas indicate that Liverpool registered more actual goals than expected in some occasions. While the disparity between the two areas is mostly quite small, such differences suggest that Liverpool had luck on their side on top of their performances. The most notable gap was on matchday 15, whereby Liverpool faced Everton in the Merseyside derby. Liverpool scored 5 goals, twice the xG statistic of 2.41. Aggregation of xG revealed that Liverpool was expected to score 64.25 goals, which is less than the 70 goals they actually scored.</p>
+<p><img src="../../posts/Liverpool-success-lucky-or-worthy-winners/image3.webp" class="img-fluid"></p>
+<p>Similarly, we could use the opposition’s xG metric to assess how lucky Liverpool was defensively. The figure above illustrates the comparison between actual and expected goals against. The visible blue areas indicate that Liverpool conceded less actual goals than expected, implying good fortune in these occasions. However, the visible red areas suggest that Liverpool was also unlucky during some fixtures as well. Aggregation of expected goals against revealed that Liverpool was expected to concede a total of 29.38 goals over 31 matches so far. In reality, Liverpool had the best defensive record in the league with a total of 21 conceded. Once again, the difference between the two measures suggests that luck was in Liverpool’s favour as well from the defensive perspective.</p>
+<p><img src="../../posts/Liverpool-success-lucky-or-worthy-winners/image4.webp" class="img-fluid"></p>
+</section>
+<section id="expected-goal-difference" class="level2">
+<h2 class="anchored" data-anchor-id="expected-goal-difference">Expected Goal Difference</h2>
+<p>Subtracting the expected goals against from xG would compute the expected goal difference for a given fixture. The visualisation above presents the actual versus expected goal difference (xDiff) for all the fixtures. A positive xDiff indicates that the team should win the game, while negative xDiff indicates an expected loss, and zero implies an expected draw. This can inform us whether the team was deserving of its result.</p>
+<p>According to the figure above, we could clearly see that Liverpool had a deserving loss on matchday 28. Liverpool lost convincingly to Watford by three goals. In that fixture, Liverpool registered their lowest xG of 0.21 and the highest expected goal against of 2.71. These statistics clearly showed that Liverpool had a very poor performance.</p>
+<p>We could also use threshold values of +0.5 and -0.5 to determine whether Liverpool was anticipated to win and lose the game respectively based on their performance. The data revealed that 24 out of 31 games had an xDiff greater than 0.5, and only 2 out of 31 games had an xDiff less than -0.5. Such statistics strongly support Liverpool’s consistency in their performance throughout the season. In reality, Liverpool won a total of 28 games and lost 1 single game.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In summary, xG is a valuable metric to assess the underlying performance of a team beyond the results. As the saying goes, better to be lucky than good. Indeed, the data revealed that Liverpool was lucky both offensively and defensively during certain occasions, albeit usually by small margins. However, saying that Liverpool’s success was a lucky win based on these results will be a complete misinterpretation. The xDiff data clearly shows that Liverpool exhibited strong performance consistently throughout the season and deserved their results. Therefore, a fair conclusion will be that Liverpool’s title winning success was largely attributed to their consistent strong performance, but they also had some luck on their side as well.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

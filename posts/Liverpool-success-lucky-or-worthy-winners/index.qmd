@@ -1,38 +1,46 @@
 ---
-title: "Your perception is your reality"
+title: "Liverpool's success: Lucky or worthy winners?"
 author: "Nien Xiang Tou"
-date: "2019-08-03"
-categories: ["Sport science"]
+date: "2020-07-02"
+categories: ["Football", "Data visualisation"]
 image: "image.webp"
-description: "This post highlights the importance of study perception in the sport science domain, especially in the context of exercise regulation"
+description: "This post examines whether Liverpool's title winning success is attributed to luck or genuine performance based on the expected goals metric."
 ---
 
-We experience a wide range of sensations during exercise. This article highlights the importance of studying perception, especially in the context of regulation of exercise.
+Liverpool was announced the champions of English Premier League (EPL) season 19/20 with a record of seven games remaining. 23 points separate them from second-placed Manchester City. This post examines whether such overwhelming dominance over their rivals is attributed to sheer luck or genuine strength of the team through visualisation of expected goal data.
 
-![Kenya's Lawrence Cherono battling with Ethopia's Lelisa Desisa in the 2019 Boston Marathon. Source: Winslow Townson/Associated Press](image.webp)
+![Source: This is Anfield](/posts/Liverpool-success-lucky-or-worthy-winners/image.webp)
 
-Have you ever stood at the end of a marathon, and witnessed how many people sprinted across the finish line? How is it possible for somebody who slowed down or was walking halfway through the race and yet managed to run the fastest right at the end of the race?
+Football results do not necessarily reflect the performance of respective teams accurately. It is not always the case that the winning team has higher number of goal-scoring opportunities or greater possession than their opposition. Sometimes, teams walk away with a result merely due to good fortune. How do we differentiate between luck and performance?
 
-This is the end-spurt phenomenon commonly seen in endurance events among elites as well as the recreational athletes. Such phenomenon challenges the concept of fatigue, and this was exactly what sparked my interest in pursuing my PhD study that aims to better understand individual's perceptual responses in self-regulation of exercise.
+## Expected Goals
 
-Traditionally, it has been thought that fatigue stems from your physiological limits. From such a perspective, why somebody slows down during a race is completely due to physiological reasons such as depletion of muscle glycogen, lactate, environmental stress or the inability of your heart to supply enough oxygen to the muscles. As a result, the athlete is unable to recruit more muscle fibers to meet the exercise demands and hence slowing down. However, if such hypothesis is true, it is not possible for the athlete to speed up at the end of the race when he or she is supposed to feel the most exhausted.
+Evaluation of a team's underlying performance at goal is made possible with the expected goals (xG) metric. The metric defines the probability of a shot being scored based on multiple factors such as angle, distance and type of assist. This is well-explained with various examples in the video link [here](https://www.youtube.com/watch?v=w7zPZsLGK18&feature=emb_logo) by Opta, a football data analytics company. Such measure provides us with further insights beyond the match statistics that are typically shown.
 
-## The Central Governor
+Football history has demonstrated that goals could be scored by players of different positions, including the goalkeeper. Some came from clear goal-scoring chances, while some were scored from very unexpected situations. For example, Asmir Begovic, goalkeeper of Stoke City, scored from his own penalty box in 2013. The xG metric would have informed us that the attempt had very low odds of hitting the back of the net. It is reasonable to consider that such abnormal and unexpected goals were just teams being lucky.
 
-This paradox was first challenged by famous South African sport scientist, Professor Tim Noakes, who also authored the running bible, *Lore of Running*. In 1996, he delivered the prestigious J. B. Wolffe Memorial Lecture at the American College of Sports Medicine (ACSM) conference. He pointed out that most people did not die running a marathon, which meant they could have ran faster during the race. Therefore, the traditional physiological model was flawed. He later went on to publish a new theoretical model to explain regulation of exercise performance, termed the "Central Governor", which remains a hot debating topic in the sports science domain to date.
+Theoretically, the team with better goal-scoring opportunities should register more goals. However, this is not the case in reality due to various factors and interaction effects in a football game. Therefore, comparison between expected and actual goals could help us differentiate chance occurrences and deserving performances. Scoring much more actual than expected goals would suggest a lucky outing for the team.
 
-This model postulates that exercise performance is regulated by a centralized control center, the brain. Exercise performance is regulated in a manner based on constant feedback between the body and the brain. As we push the limits of our body, the brain generates a whole range of sensations consciously felt by us. The sensations felt during exercise are not the consequences of fatigue, but a protective mechanism to ensure that we complete our exercise in a safe manner. In short, the brain stops us from exercising to the point that we kill ourselves.
+xG is not commonly reported because such information is not readily available online, as the probabilities are computed based on trained models using historical data. Some sites charge fees for these data. Fortunately, [Understat.com](https://understat.com/) provides free access to xG statistics based on their algorithms. Data was scraped using BeautifulSoup package in python to examine whether Liverpool's impressive season so far (31 fixtures) was a fluke or genuine prowess. You may find the web scraping code template on my github [here](https://github.com/nxrunning/codelibrary/blob/nxrunning-webscrapingxGstatistics/Webscraping%20Understat%20based%20on%20football%20team.ipynb).
 
-## Why study perception?
+![](/posts/Liverpool-success-lucky-or-worthy-winners/image2.webp) The area plot above illustrates the comparison between actual and expected goals for Liverpool this season so far. The first important point is observing how xG approximates actual goals closely most of the time, which highlights the predictive value of the metric. Another interpretation of the plot is that Liverpool was expected to score at least one goal in most matches (29 to be precise). This is not surprising given that they are second in the league's goal rankings. This suggests that Liverpool was quite consistent in producing goal-scoring opportunities.
 
-It is important to understand that in the context of an endurance event such as a marathon, athletes regulate their exercise performance in an anticipatory manner. This means individuals including novice runners naturally try to pace themselves in a sustainable manner to complete the race. Research have empirically shown that athletes slow down way before they reach the critical core temperature, and before the glycogen tank completely empties. Regulation of exercise is based on the perceived sensations during exercise, which help to provide feedback on finding the balance between safety and performance.
+The visible grey areas indicate that Liverpool registered more actual goals than expected in some occasions. While the disparity between the two areas is mostly quite small, such differences suggest that Liverpool had luck on their side on top of their performances. The most notable gap was on matchday 15, whereby Liverpool faced Everton in the Merseyside derby. Liverpool scored 5 goals, twice the xG statistic of 2.41. Aggregation of xG revealed that Liverpool was expected to score 64.25 goals, which is less than the 70 goals they actually scored.
 
-Why is there a need to study perceptual responses in sports given the tools to monitor a myriad of objective physiological measures such as heart rate, oxygen consumption and blood lactate? This is because when you think you have reached your point of exhaustion during exercise, the truth is you didn't.
+![](/posts/Liverpool-success-lucky-or-worthy-winners/image3.webp)
 
-> **It is a perceived failure, and not a true failure.**
+Similarly, we could use the opposition's xG metric to assess how lucky Liverpool was defensively. The figure above illustrates the comparison between actual and expected goals against. The visible blue areas indicate that Liverpool conceded less actual goals than expected, implying good fortune in these occasions. However, the visible red areas suggest that Liverpool was also unlucky during some fixtures as well. Aggregation of expected goals against revealed that Liverpool was expected to concede a total of 29.38 goals over 31 matches so far. In reality, Liverpool had the best defensive record in the league with a total of 21 conceded. Once again, the difference between the two measures suggests that luck was in Liverpool's favour as well from the defensive perspective.
 
-It is quite impossible to run yourself to true failure in the context of exercise performance. Your true performance probably only happens when you face a life-and-death situation, such as being chased by a lion. This differentiation between a perceived and true failure is very important, as perceptual responses can be influenced by many other factors besides physiological variables.
+![](/posts/Liverpool-success-lucky-or-worthy-winners/image4.webp)
 
-This is the reason why placebo and psychological effects can affect performance. These effects alter your perceptual responses, and hence your performance. In the words of an Italian sport physiologist, Professor Samuele Marcora, effort perception is claimed to be the "cardinal exercise stopper". Therefore, whatever factors that can influence your perception can ultimately influence your exercise performance.
+## Expected Goal Difference
 
-Your perception is in fact your reality.
+Subtracting the expected goals against from xG would compute the expected goal difference for a given fixture. The visualisation above presents the actual versus expected goal difference (xDiff) for all the fixtures. A positive xDiff indicates that the team should win the game, while negative xDiff indicates an expected loss, and zero implies an expected draw. This can inform us whether the team was deserving of its result.
+
+According to the figure above, we could clearly see that Liverpool had a deserving loss on matchday 28. Liverpool lost convincingly to Watford by three goals. In that fixture, Liverpool registered their lowest xG of 0.21 and the highest expected goal against of 2.71. These statistics clearly showed that Liverpool had a very poor performance.
+
+We could also use threshold values of +0.5 and -0.5 to determine whether Liverpool was anticipated to win and lose the game respectively based on their performance. The data revealed that 24 out of 31 games had an xDiff greater than 0.5, and only 2 out of 31 games had an xDiff less than -0.5. Such statistics strongly support Liverpool's consistency in their performance throughout the season. In reality, Liverpool won a total of 28 games and lost 1 single game.
+
+## Conclusion
+
+In summary, xG is a valuable metric to assess the underlying performance of a team beyond the results. As the saying goes, better to be lucky than good. Indeed, the data revealed that Liverpool was lucky both offensively and defensively during certain occasions, albeit usually by small margins. However, saying that Liverpool's success was a lucky win based on these results will be a complete misinterpretation. The xDiff data clearly shows that Liverpool exhibited strong performance consistently throughout the season and deserved their results. Therefore, a fair conclusion will be that Liverpool's title winning success was largely attributed to their consistent strong performance, but they also had some luck on their side as well.
