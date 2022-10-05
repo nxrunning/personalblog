@@ -4,6 +4,7 @@ author: "Nien Xiang Tou"
 date: "2020-02-20"
 categories: ["Data science", "Football"]
 image: "image.webp"
+description: "This article documents a walk-through on web scraping data on English Premier League teams from Wikipedia and visualising the data using R."
 ---
 
 Web scraping opens doors to a myriad of data sources online. Be it text or numbers, web scraping allows us to extract online data into spreadsheets in our computer. With reference to code from [[FC RSTATS]{.underline}](http://www.fcrstats.com/dataviz.html), this article documents a walk through on how to scrape football data from the web and visualising the data using open-source programming platform, R.

@@ -4,6 +4,7 @@ author: "Nien Xiang Tou"
 date: "2020-04-25"
 categories: ["Sport science"]
 image: "image.webp"
+description: "This post writes about the phenomenon of reduced blood lactate concentration found with increasing altitude."
 ---
 
 Blood lactate is associated with fatigue during maximal exercise. This post writes about the phenomenon of reduced blood lactate concentration found with increasing altitude.

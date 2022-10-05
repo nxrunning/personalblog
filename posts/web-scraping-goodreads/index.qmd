@@ -4,6 +4,7 @@ author: "Nien Xiang Tou"
 date: "2020-05-01"
 categories: ["Data science"]
 image: "image.webp"
+description: "This post documents the use of Python to scrape popular running books from Goodreads using the BeautifulSoup package."
 ---
 
 Data is incredibly important to every analyst or data scientist. Web scraping is a valuable skill that allows us to access the limitless sources of data online. In my previous [[blogpost]{.underline}](https://www.nienxiangtou.com/posts/web-scraping-and-data-visualising-with-r-epl19/20-goal-stats/), I have documented the use of R to scrape football data from a wikipedia page. This post presents my attempt on scraping information of popular running books from Goodreads using Python programming language.

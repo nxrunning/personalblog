@@ -4,11 +4,12 @@ author: "Nien Xiang Tou"
 date: "2020-05-16"
 categories: ["Sport science"]
 image: "image.webp"
+description: "This post examines whether variation in marathon running pace differs among runners of different performance levels."
 ---
 
 Pacing strategy is an important determinant of performance, especially in endurance events such as the marathon. Does pacing profile differ across runners of different levels? This blog post examines the pace variation of Singaporean male and female runners in the Standard Chartered Singapore Marathon (SCSM) 2019.
 
-![SCMS 2019. Source: RunSociety.com](image.webp){fig-align="center" width="680" height="400"}
+![SCMS 2019. Source: RunSociety.com](image.webp){fig-align="left" width="680" height="400"}
 
 ## Art of Pacing
 

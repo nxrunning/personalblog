@@ -1,9 +1,10 @@
 ---
-title: "Animated Data Visualisation of Covid-19"
+title: "Animated Data Visualisation of the Covid-19 Pandemic using R"
 author: "Nien Xiang Tou"
 date: "2020-03-24"
 categories: ["Data visualisation"]
 image: "image.webp"
+description: "This article visualises how the covid-19 pandemic has evolved in certain countries using animated line plots in R."
 ---
 
 Number of infected cases and deaths around the world continues to rise daily. This article visualises how the pandemic has evolved in certain countries using animated line plots on R.

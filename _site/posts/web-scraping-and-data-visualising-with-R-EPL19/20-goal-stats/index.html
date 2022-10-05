@@ -8,6 +8,7 @@
 
 <meta name="author" content="Nien Xiang Tou">
 <meta name="dcterms.date" content="2020-02-20">
+<meta name="description" content="This article documents a walk-through on web scraping data on English Premier League teams from Wikipedia and visualising the data using R.">
 
 <title>Nien Xiang Tou - Web Scraping and Data Visualising with R: EPL 19/20 Goal Stats</title>
 <style>
@@ -117,17 +118,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
-<style>
-    .quarto-title-block .quarto-title-banner {
-      background: #C06C84;
-    }
-    </style>
 
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -172,46 +168,62 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Web Scraping and Data Visualising with R: EPL 19/20 Goal Stats</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">Data science</div>
-                <div class="quarto-category">Football</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nien Xiang Tou </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">February 20, 2020</p>
-      </div>
-    </div>
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#required-libraries" id="toc-required-libraries" class="nav-link active" data-scroll-target="#required-libraries">1. Required Libraries</a></li>
+  <li><a href="#webpage" id="toc-webpage" class="nav-link" data-scroll-target="#webpage">2. Webpage</a></li>
+  <li><a href="#scrape-the-data" id="toc-scrape-the-data" class="nav-link" data-scroll-target="#scrape-the-data">3. Scrape the data</a></li>
+  <li><a href="#cleaning-the-data" id="toc-cleaning-the-data" class="nav-link" data-scroll-target="#cleaning-the-data">4. Cleaning the data</a></li>
+  <li><a href="#data-visualisation" id="toc-data-visualisation" class="nav-link" data-scroll-target="#data-visualisation">5. Data Visualisation</a></li>
+  <li><a href="#dividing-teams-into-four-clusters" id="toc-dividing-teams-into-four-clusters" class="nav-link" data-scroll-target="#dividing-teams-into-four-clusters">6. Dividing teams into four clusters</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Web Scraping and Data Visualising with R: EPL 19/20 Goal Stats</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data science</div>
+    <div class="quarto-category">Football</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    This article documents a walk-through on web scraping data on English Premier League teams from Wikipedia and visualising the data using R.
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nien Xiang Tou </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 20, 2020</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
 
 <p>Web scraping opens doors to a myriad of data sources online. Be it text or numbers, web scraping allows us to extract online data into spreadsheets in our computer. With reference to code from <a href="http://www.fcrstats.com/dataviz.html"><u>FC RSTATS</u></a>, this article documents a walk through on how to scrape football data from the web and visualising the data using open-source programming platform, R.</p>
 <section id="required-libraries" class="level2">

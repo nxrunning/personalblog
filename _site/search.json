@@ -11,7 +11,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nAug 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nMay 16, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nMay 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nApr 25, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData visualisation\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nMar 24, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nFeb 20, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nFeb 9, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 8, 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\n\n\n\n\nNien Xiang Tou\n\n\nAug 3, 2019\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nAug 29, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData visualisation\n\n\n\nThis post documents the visualisation of Singapore’s Covid-19 clusters on the map using R programming.\n\n\n\nNien Xiang Tou\n\n\nMay 30, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\nThis post examines whether variation in marathon running pace differs among runners of different performance levels.\n\n\n\nNien Xiang Tou\n\n\nMay 16, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\n\nThis post documents the use of Python to scrape popular running books from Goodreads using the BeautifulSoup package.\n\n\n\nNien Xiang Tou\n\n\nMay 1, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\nThis post writes about the phenomenon of reduced blood lactate concentration found with increasing altitude.\n\n\n\nNien Xiang Tou\n\n\nApr 25, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData visualisation\n\n\n\nThis article visualises how the covid-19 pandemic has evolved in certain countries using animated line plots in R.\n\n\n\nNien Xiang Tou\n\n\nMar 24, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\nThis article documents a walk-through on web scraping data on English Premier League teams from Wikipedia and visualising the data using R.\n\n\n\nNien Xiang Tou\n\n\nFeb 20, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\nThis post examines and compares the competitiveness of different English Premier LEague seasons based on coefficient of variation metric.\n\n\n\nNien Xiang Tou\n\n\nFeb 9, 2020\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData science\n\n\nFootball\n\n\n\nThis post explores the use of logistic regression to examine whether football possession can predict wins in football with data from EPL 18/19.\n\n\n\nNien Xiang Tou\n\n\nAug 8, 2019\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSport science\n\n\n\nThis post highlights the importance of study perception in the sport science domain, especially in the context of exercise regulation\n\n\n\nNien Xiang Tou\n\n\nAug 3, 2019\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -163,28 +163,28 @@
   {
     "objectID": "posts/Animated-data-viz-covid19/index.html",
     "href": "posts/Animated-data-viz-covid19/index.html",
-    "title": "Animated Data Visualisation of Covid-19",
+    "title": "Animated Data Visualisation of the Covid-19 Pandemic using R",
     "section": "",
     "text": "Number of infected cases and deaths around the world continues to rise daily. This article visualises how the pandemic has evolved in certain countries using animated line plots on R."
   },
   {
     "objectID": "posts/Animated-data-viz-covid19/index.html#china-breakout",
     "href": "posts/Animated-data-viz-covid19/index.html#china-breakout",
-    "title": "Animated Data Visualisation of Covid-19",
+    "title": "Animated Data Visualisation of the Covid-19 Pandemic using R",
     "section": "China Breakout",
     "text": "China Breakout\nWhilethe true origin of the virus remains debatable, the very first reported covid-19 case was detected in Wuhan City, Hubei Province of China. Since then, the numbers have skyrocketed. Using the numbers reported in the daily situation reports by World Health Organization (WHO), let’s visualise how the outbreak has developed since 1st February 2020 using gganimate on R.\n\n\n\n\n\nThe figure above illustrates how the number of cases increased day by day. The exact dates are reflected in the subtitle. Over the period of almost two months, the number of confirmed cases has increased from 11821 to 81601 at the point of writing. From the graph, we can see a sharp increase in cases on 14th February. It can also be seen that the rate of increase seems to decline since March."
   },
   {
     "objectID": "posts/Animated-data-viz-covid19/index.html#southeast-asia",
     "href": "posts/Animated-data-viz-covid19/index.html#southeast-asia",
-    "title": "Animated Data Visualisation of Covid-19",
+    "title": "Animated Data Visualisation of the Covid-19 Pandemic using R",
     "section": "Southeast Asia",
     "text": "Southeast Asia\nNext, let’s visualise how the virus has developed closer to home. The figure below illustrates the breakout in certain Southeast Asian countries.\n\n\n\n\n\nAt the start of February, Singapore was leading the charts over its neighbours. Things have changed very quickly since early March. The number of reported cases in Malaysia surpassed Singapore on 15th March. Presently, the pandemic is faring much worse in many other Southeast Asian countries as compared to Singapore."
   },
   {
     "objectID": "posts/Animated-data-viz-covid19/index.html#rest-of-the-world",
     "href": "posts/Animated-data-viz-covid19/index.html#rest-of-the-world",
-    "title": "Animated Data Visualisation of Covid-19",
+    "title": "Animated Data Visualisation of the Covid-19 Pandemic using R",
     "section": "Rest of the World",
     "text": "Rest of the World\nCovid-19 was announced a pandemic on 11th March 2020 given the alarming levels of the virus outbreak. In such a connected world today, it was hard for any countries to get off the hook. Let’s take a look at some other notable countries being hit.\n\n\n\n\n\nThe graph clearly shows the trajectories of the virus spread differ between countries. For example, there was a sharp increase in number of cases in South Korea during the second half of February. The rate of increase quickly slowed in March. On the other hand, Italy is still facing an exponential manner of spread at the moment. Based on the figures, we can infer the extent of success in countries’ attempt to contain the virus.\nData visualisation code and dataset can be found on my github."
   },
@@ -257,5 +257,47 @@
     "title": "Pace variation in Marathon running: Analysing data from Standard Chartered Singapore Marathon 2019",
     "section": "Importance of consistency in pacing",
     "text": "Importance of consistency in pacing\nThese numbers highlighted that better performing runners were not only faster in their speed, they also exhibited considerably less variation in their marathon running pace. Obviously, many factors can influence a marathon performance. One aspect is definitely optimising your pacing strategy during the race. This means selecting a pace that you can sustain consistently with minimal variation throughout the race. This is an important takeaway for all levels of runners. Hence, do practise your pacing strategy during training, and carefully plan your pace for race day. It will probably make a difference!\nData processing, analysis and visualisation were performed on R. Full code and datasets can be found here."
+  },
+  {
+    "objectID": "posts/Spatial-visualisation-covid-clusters-sgp/index.html",
+    "href": "posts/Spatial-visualisation-covid-clusters-sgp/index.html",
+    "title": "Spatial visualisation with ggmap: Covid-19 clusters in Singapore",
+    "section": "",
+    "text": "Contact tracing plays a key role in infectious disease management, and related cases form a cluster. Since the coronavirus outbreak, several clusters have formed all over Singapore. This blog post documents my attempt to visualise the clusters on the Singapore map using R programming language."
+  },
+  {
+    "objectID": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#required-tools",
+    "href": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#required-tools",
+    "title": "Spatial visualisation with ggmap: Covid-19 clusters in Singapore",
+    "section": "Required Tools",
+    "text": "Required Tools\nlibrary(rvest)\nlibrary(ggplot2)\nlibrary(ggmap)\nThree libraries are required for this project. rvest does the web scraping and ggplot2 is required for graph plotting. More importantly, ggmap helps us to conveniently locate the coordinates of each cluster address with the geocode function."
+  },
+  {
+    "objectID": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#google-maps-api",
+    "href": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#google-maps-api",
+    "title": "Spatial visualisation with ggmap: Covid-19 clusters in Singapore",
+    "section": "Google Maps API",
+    "text": "Google Maps API\nregister_google(key = \"insert your API key here\")\nFirst, we need to register an authorised Google API key in order to use the geocode function. You may register for your free API key over here."
+  },
+  {
+    "objectID": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#cluster-list",
+    "href": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#cluster-list",
+    "title": "Spatial visualisation with ggmap: Covid-19 clusters in Singapore",
+    "section": "Cluster List",
+    "text": "Cluster List\nThe list of clusters used in this blog post was from the Covid-19 Singapore Dashboard, created by Upcode Academy. The dashboard displays several visualisations on data related to the pandemic outbreak in Singapore. On the bottom right of the page, we could see the clusters and their respective number of cases. Data on the cluster list was scraped through the use of rvest package. The web scraping process is similar to the code I have documented in my previous blogpost.\n\n\n\nOrganising the clusters into a data frame\n\n\nA total of 47 clusters was scraped from the dashboard and organised into a dataframe. The figure above presents the name of each cluster and its respective number of cases. The list includes clusters that were identified early on during the outbreak (e.g. Yong Thai Hang medical shop, Grand Hyatt Hotel) as well as the foreign worker dormitories, where numbers have skyrocketed during the last 2 months (e.g. S11 Dormitory). Unfortunately, the numbers for certain clusters are not updated (especially for the dormitories). Nevertheless, it contains majority of the local clusters identified so far.\nIn order to plot each cluster on the map, we require the coordinates of each cluster address. Google identifies each address by its latitude and longitude position, which we can conveniently retrieve via the geocode function. Before doing this, we had to tidy up some of these cluster names in order to better locate them. For example, specifying “Grand Hyatt Hotel Singapore” instead of “Grand Hyatt Hotel” returns the local coordinates instead of a foreign location. Editing of all cluster names can be found in the full code.\nA for-loop was then used to extract the coordinate positions for each cluster and appended to the data frame.\n# Computing latitude and longitude of each location\nfor (i in 1:nrow(cluster_df)) {\n  cluster_name = cluster_df[i, c(\"clusters\")]\n  cluster_geocode = geocode(cluster_name)\n  cluster_df[i, c(\"lon\")] <- cluster_geocode$lon\n  cluster_df[i, c(\"lat\")] <- cluster_geocode$lat\n}"
+  },
+  {
+    "objectID": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#singapore-map",
+    "href": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#singapore-map",
+    "title": "Spatial visualisation with ggmap: Covid-19 clusters in Singapore",
+    "section": "Singapore Map",
+    "text": "Singapore Map\n# Locating the latitude and longitude position of Singapore\n# Lon = 103.8198, Lat = 1.352083\nsingapore_city <- geocode(\"Singapore\")\n\n# Retrieves the map image of the location\nsingapore_map <- get_map(singapore_city, zoom = 12,  maptype = \"roadmap\")\n\n# Visualising the map \nggmap(singapore_map)\nThe map visualisation encompasses plotting each cluster on the map. Hence, we need to prepare the background map first. The coordinates of the map were retrieved through the geocode function. Next, the get_map function helps to get the image of the map. We could specify the amount of zoom as well as the map type. There are several map types, and “roadmap” represents the typical google map we see. Lastly, ggmap function helps us to visualise the map (see below).\n\n\n\nVisualisation of the Singapore map using ggmap."
+  },
+  {
+    "objectID": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#visualising-the-clusters",
+    "href": "posts/Spatial-visualisation-covid-clusters-sgp/index.html#visualising-the-clusters",
+    "title": "Spatial visualisation with ggmap: Covid-19 clusters in Singapore",
+    "section": "Visualising the clusters",
+    "text": "Visualising the clusters\n# Map the clusters on singapore map\nggmap(singapore_map, \n      base_layer = ggplot(data = cluster_df,\n                          aes(x=lon, y = lat, color = cases))) +\n  geom_point(size = 1.5,\n             alpha = 0.8)+\n  labs(title = \"Covid-19 Clusters in Singapore\",\n       caption = \"Data from Covid-19 Singapore Dashboard\",\n       color = \"Number of cases\")+\n  scale_colour_gradient(low = \"blue\", high = \"red\", na.value = NA)+\n  theme_void()\nNext, visualisation of the clusters was done by simply adding the scatterplot layer to the map layer. Specifying the color to be dependent on the number of cases helps to differentiate the magnitude of the clusters. You may set the gradient colours using scale_colour_gradient. In this case, most clusters are relatively small (< 50) except the foreign worker dormitories. Unfortunately, as mentioned earlier, the numbers for the dormitories are not updated. You may see the final plot below. Do take note that certain clusters are missing from the plot due to the zoom size of the map selected.\n\n\n\nMap visualisation of Covid-19 clusters in Singapore using ggmap.\n\n\nFull code for this article can be accessed through my github."
   }
 ]

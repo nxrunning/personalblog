@@ -4,6 +4,7 @@ author: "Nien Xiang Tou"
 date: "2019-08-03"
 categories: ["Sport science"]
 image: "image.webp"
+description: "This post highlights the importance of study perception in the sport science domain, especially in the context of exercise regulation"
 ---
 
 We experience a wide range of sensations during exercise. This article highlights the importance of studying perception, especially in the context of regulation of exercise.

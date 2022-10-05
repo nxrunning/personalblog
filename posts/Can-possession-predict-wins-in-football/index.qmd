@@ -4,6 +4,7 @@ author: "Nien Xiang Tou"
 date: "2019-08-08"
 categories: ["Data science", "Football"]
 image: "image.webp"
+description: "This post explores the use of logistic regression to examine whether football possession can predict wins in football with data from EPL 18/19."
 ---
 
 Ball possession is an important performance indicator in football. This article explores the use of logistic regression model to examine a binary classification problem: whether ball possession predicts match win or not.

@@ -4,6 +4,7 @@ author: "Nien Xiang Tou"
 date: "2020-02-09"
 categories: ["Data science","Football"]
 image: "image.webp"
+description: "This post examines and compares the competitiveness of different English Premier LEague seasons based on coefficient of variation metric."
 ---
 
 Is the English Premier League more or less competitive as compared to a decade ago? This article examines and compares the competitiveness of different seasons based on the coefficient of variation metric.
