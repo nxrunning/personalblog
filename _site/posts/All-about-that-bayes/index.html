@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nien Xiang Tou">
+<meta name="dcterms.date" content="2021-03-04">
+<meta name="description" content="This post presents how Bayesian inference explains why different individuals appraise similar evidence differently.">
+
+<title>Nien Xiang Tou - All about that Bayes: Why individuals appraise similar evidence differently?</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nien Xiang Tou</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">Blog</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Publications.html">Publications</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nxrunning"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nxrunning"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#probability" id="toc-probability" class="nav-link active" data-scroll-target="#probability">Probability</a></li>
+  <li><a href="#bayesian-inference-quantifying-and-updating-our-beliefs" id="toc-bayesian-inference-quantifying-and-updating-our-beliefs" class="nav-link" data-scroll-target="#bayesian-inference-quantifying-and-updating-our-beliefs">Bayesian inference: Quantifying and updating our beliefs</a></li>
+  <li><a href="#example-what-is-the-probability-of-covid-19-infection-if-you-have-a-positive-antigen-rapid-test" id="toc-example-what-is-the-probability-of-covid-19-infection-if-you-have-a-positive-antigen-rapid-test" class="nav-link" data-scroll-target="#example-what-is-the-probability-of-covid-19-infection-if-you-have-a-positive-antigen-rapid-test">Example: What is the probability of Covid-19 infection if you have a positive antigen rapid test?</a></li>
+  <li><a href="#updating-our-beliefs" id="toc-updating-our-beliefs" class="nav-link" data-scroll-target="#updating-our-beliefs">Updating our beliefs</a></li>
+  <li><a href="#prior-beliefs-matter" id="toc-prior-beliefs-matter" class="nav-link" data-scroll-target="#prior-beliefs-matter">Prior beliefs matter</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">All about that Bayes: Why individuals appraise similar evidence differently?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Statistics</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    This post presents how Bayesian inference explains why different individuals appraise similar evidence differently.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nien Xiang Tou </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 4, 2021</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>The world is intrinsically ambiguous, and we usually must make decisions and judgements in our daily lives in the face of uncertainty. Some situations are trivial (e.g., should I bring an umbrella? Can I get a prize from the claw machine?) while some can have heavy consequences (e.g., should I consent to a major surgery? Do I take the covid-19 vaccine?). Probability often guides our decisions in such instances. This article presents how Bayesian inference helps us in reasoning everyday problems and explains why different individuals appraise similar evidence differently.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image.webp" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Source: Unsplash</figcaption><p></p>
+</figure>
+</div>
+<section id="probability" class="level2">
+<h2 class="anchored" data-anchor-id="probability">Probability</h2>
+<p>Many of us should be familiar with the concept of probability, which refers to the likelihood of an event occurring. Probability of any event can be simply calculated by dividing the number of events of interest by the total number of possible outcomes. For example, the probability of attaining a 4 in a six-sided dice roll is 1/6. Given the assumption that the dice is fair, this implies that you expect to roll a 4 in every six rolls.</p>
+<p>Computation of probability is relatively easy when parameters are known. However, this is usually not the case for many situations in our daily lives, in which the parameters are unknown to us. For instance, the probability of winning a prize from a claw machine is harder to ascertain as compared to the dice roll example. Typically, these machines have an operator-adjustable pay out rate that is unknown to players. Thus, how do we determine the probability of receiving a prize from a claw machine?</p>
+<p>We may examine n number of trials and record the number of times a player successfully wins a prize. For example, we may observe that a player manages to win 2 prizes in a total of 25 trials. Given such observation, we may infer that the probability of winning is 2/25 or 8%.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image2.webp" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Probability density function and cumulative distribution function graphs</figcaption><p></p>
+</figure>
+</div>
+<p>We may also model the probability as a continuum using the beta distribution. The beta distribution is a probability distribution on probabilities, defined using two parameters: α and β. In the context of this illustration, α refers to the number of times a prize was won from the claw machine (i.e., 2) and β represents the number of times that a prize was not won (i.e., 23). The figure above presents the probability density function and cumulative distribution function of the beta distribution. The graph on the left informs us that most of the plot’s density is less than 0.2, and we can estimate the 95% confidence interval of the win rate to be approximately between 1% and 21% using the graph on the right. These numbers strongly suggest that the actual likelihood of winning a prize from this claw machine is 20% or less. While it is impossible to deduce the true win rate, both graphs certainly provided more information than a discrete probability value.</p>
+<p>This approach of observing data and determining the probability of an event occurrence is commonly used in academia and taught in schools. Such interpretation of probability is also known as frequentist inference. As defined by <a href="https://en.wikipedia.org/wiki/Frequentist_inference"><u>Wikipedia</u></a>, this method of inference “draws conclusions from sample data by emphasizing the frequency or proportion of the data”. While this may be an objective way of quantifying uncertainty and likelihood, it does not align with how we behave and reason things in our daily lives. For example, given our calculated probability on winning the claw machine above, there are people who may decide to take their chances and others who refrain from it despite seeing the same evidence. The limitation of the frequentist school of thought is the lack of account for differing prior beliefs among different individuals.</p>
+</section>
+<section id="bayesian-inference-quantifying-and-updating-our-beliefs" class="level2">
+<h2 class="anchored" data-anchor-id="bayesian-inference-quantifying-and-updating-our-beliefs">Bayesian inference: Quantifying and updating our beliefs</h2>
+<p>In our daily lives, probability is not only used to describe data but also a way to quantify the strength of our beliefs in things about the world (e.g., I think the sun is likely to rise tomorrow, I am confident that the company will still exist in ten years’ time). Our beliefs change consistently as we experience new things and observe new evidence. Another school of thought, Bayesian inference, reflects exactly such process of quantifying and updating our beliefs.</p>
+<p>The term “Bayesian” originated from an English statistician and Presbyterian minister, Thomas Bayes. He devised the Bayes’ Theorem, which is a concept of conditional probability defined by the formula below. P(A|B) refers to the probability that event A occurs given that event B has already occurred. Bayes Theorem purports that we can work out the probability of P(B|A) if we know the reversed conditional probability, P(A|B).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image3.webp" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Bayes’ Theorem</figcaption><p></p>
+</figure>
+</div>
+<p>The approach of using Bayes Theorem for subjective probability-based inference was instead popularized by a French scholar, Pierre-Simon Laplace. Such method of inference is termed Bayesian inference, which expresses how the probability of a hypothesis or state of belief should change given new evidence. Now, let us adapt the Bayes Theorem to the context of hypothesis (H) and observed evidence (E).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image4.webp" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Application of Bayes’ Theorem to Bayesian inference</figcaption><p></p>
+</figure>
+</div>
+<p>In the context of Bayesian inference, P(H|E) is referred to as the posterior probability, which represents how strongly we believe in our hypotheses given the evidence we observed. This can be derived using two key components: the likelihood, and the prior probability. First, the likelihood, P(E|H), represents the probability of the evidence given our hypothesis. This component is akin to how we calculate probability using the frequentist approach. Second, the prior probability, P(H), denotes the strength of our belief in our hypothesis before we observed the evidence. This is the key component that separates the frequentist and Bayesian inference approach. Last, we need P(E) to normalize our posterior probability to a value between 0 and 1.</p>
+</section>
+<section id="example-what-is-the-probability-of-covid-19-infection-if-you-have-a-positive-antigen-rapid-test" class="level2">
+<h2 class="anchored" data-anchor-id="example-what-is-the-probability-of-covid-19-infection-if-you-have-a-positive-antigen-rapid-test">Example: What is the probability of Covid-19 infection if you have a positive antigen rapid test?</h2>
+<p>Let us suppose you are in Singapore and you are tested positive for Covid-19 infection using an antigen rapid test (ART). As reported in this <a href="https://www.straitstimes.com/singapore/false-positives-or-negatives-and-their-impact-on-mass-testing">news article</a>, the ART’s sensitivity (true positive rate) is 82% and its specificity (true negative rate) is 99%. This also indicates that the false positive rate is 1%. Given that we googled and found that the rate of Covid-19 infection in Singapore is approximately 1% at present, what is the probability of infection if you receive a positive swab test?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image5.webp" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The table above informs us that the probability of infection is 45.3% after accounting for our prior belief that the rate of infection is 1%. This example also highlights the difference in inference between a frequentist and Bayesian approach. If we do not account for any prior probability, we would have assumed that the probability of infection is equivalent to the likelihood of 82% since that is the true positive rate of the test.</p>
+<p>Now, let us examine the difference in posterior probability if we have a different prior probability. For example, if somebody hypothesizes that the infection rate is higher at 5%, what is the probability of infection given a positive swab test?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image6.webp" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>As presented in the new table, the new posterior probability increases to 81.2%. Given the same evidence, one who has a higher prior probability is more certain of infection as compared to somebody who has a lower prior probability. This may have implications on mental health since fear and anxiety levels probably differ between 45% and 81% chance of infection.</p>
+</section>
+<section id="updating-our-beliefs" class="level2">
+<h2 class="anchored" data-anchor-id="updating-our-beliefs">Updating our beliefs</h2>
+<p>The heart of Bayesian inference is the concept of updating our beliefs as we gather new evidence. Importantly, this is a continuous process. Let us take our example one step further and suppose that we took the ART a second time and tested positive again. What will be our new posterior probability?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image7.webp" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>We change our prior probability to 45.3% based on the first test result and calculate the posterior probability again. The table above informs us that the updated odds of infection is 98.5%. Clearly, we should go to the hospital immediately!</p>
+</section>
+<section id="prior-beliefs-matter" class="level2">
+<h2 class="anchored" data-anchor-id="prior-beliefs-matter">Prior beliefs matter</h2>
+<p>The use of Bayes Theorem demonstrates the importance of prior beliefs in appraising the same evidence. Many of our beliefs and hypotheses about the world differ from person to person. As illustrated in the example, different prior beliefs can result in contrasting posterior probabilities. This plausibly explains why individuals appraise similar evidence differently and thus different behaviours. Thus, it is important to note that probability does not just describe randomness, but also expresses strength of individual beliefs, and their interaction informs our decisions and judgements in daily lives.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
