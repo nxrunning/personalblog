@@ -1,0 +1,690 @@
+---
+title: "Tokyo Olympics: Analysis of the 1500m Event's Pacing Strategy using the Concept of Critical Speed"
+author: "Nien Xiang Tou"
+date: "2021-08-09"
+categories: ["Sport science"]
+image: "image.webp"
+description: "This post employs the concept of critical spped to analyse the pacing strategy in the 1500m event finals at the Tokyo Olympics."
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+execute:
+  echo: false
+  output: false
+---
+
+The 1500m event is a demanding middle-distance race in which athletes have to sustain high-intensity efforts over prolonged periods. This blog post employs the concept of critical speed to analyse the pacing strategy in the men's and women's 1500m finals at the Tokyo Olympics 2020.
+
+![The Men's 1500m Finals at the Tokyo Olympics. Source: Reuters/Andrew Boyers](image.webp)
+
+## Introduction
+
+Energy output during prolonged cardiorespiratory exercise is produced from a spectrum of both the aerobic (oxidative) and anaerobic (glycolytic) energy systems. The proportion of contribution from either system is often dependent on the exercise intensity levels. Given that venturing into the anaerobic territories is typically associated with fatigue, it has been of interest to scientists, coaches, and athletes to find the optimal exercise intensity to meet the demands of sporting performances.
+
+Numerous concepts have been established in sports science to try identifying key levels of exercise intensity to predict fatigue and performance. One such concept often used in the world of cycling is the concept of *critical power*. In layman terms, critical power represents the highest power output that can be sustained for a prolonged period (approximately 30-60 minutes). It has been purported to be a key 'threshold' that distinguishes between the heavy and severe intensity domains. The latter domain is characterised by rapid increase in oxygen uptake and blood lactate, and the inability to reach steady states. Any intensity beyond the critical power level will result in the athlete tapping significantly into his or her finite anaerobic capacity. Continuous exercise at such high intensity levels will result in inevitably imminent fatigue.
+
+The concept of critical power is relevant to any sporting performances in which athletes have to exercise in the severe intensity domain. A good applicable example in the athletics will be the 1500m event, which requires significant energy contribution from the anaerobic system. In the context of running, the same concept is termed *critical speed* instead since running is more pertinent to speed than power output. An interesting application of this concept is predicting the time to exhaustion when running beyond the critical speed using the following equation.
+
+[**Time to exhaustion = D'/ (S -- CS)**]{text-align="center"}
+
+The concept proposes that when one runs at a given speed (S) above the critical speed (CS), the ability to sustain that speed is limited by the individual's work capacity (D'). For example, a runner has a CS of 5 m/s and D' of 200m. If this runner attempts to run at a speed of 7 m/s, it is expected that he or she will reach exhaustion in 100 seconds (as calculated by 200/ (7-5) = 100).
+
+![Illustration of the critical speed concept](image2.webp)
+
+## Calculation of Critical Speed (CS) and Work Capacity (D')
+
+Critical speed (CS) can be computed using the personal records of an individual over different running distances. As illustrated in the figure above, we plot the average speed of one's best performances against their respective time duration. We will derive a hyperbolic relationship between speed and time. On the left side of the curve, we observe an initial steep decline in the speed that we can sustain as the time duration increases. However, the rate of decline slows and beyond a certain point, any increase in time duration corresponds to minimal changes in the speed. The curve eventually approximates the dotted line, termed the asymptote, which represents the CS. In addition, we can also derive one's work capacity (D') from the curve, as denoted by the shaded areas.
+
+Given that it requires some effort to interpret a hyperbolic curve, an easier and commonly used method to calculate CS and D' is to plot the total work done (distance of event) against the time duration, which has a linear relationship. Next, we fit a linear regression line to the values and interpret the values from the straight-line equation. The slope or gradient of the line represents CS, while the y-intercept represents D'. The figure below illustrates an example of this method to calculate the CS and D' of Timothy Cheruiyot, who is currently first ranking in the men's 1500m event. I plotted his personal best records between 800-5000m (data from IAAF database) and derived the linear regression equation based on these values. The slope of the equation informs us that his CS is 5.74 m/s, and the y-intercept informs us that his D' is 261.30 metres.
+
+![Estimation of critical speed and work capacity from a distance-duration graph](image3.webp)
+
+## Application of the critical speed concept to pacing
+
+In the recent American College of Sports Medicine 2021 Annual Meeting, a [[research study]{.underline}](https://journals.lww.com/acsm-msse/Fulltext/2021/08001/Pacing_Strategy_In_One_mile_World_Records_As_A.152.aspx) demonstrated that 1-mile (1600m) world record performances were ran above CS with complete depletion of D' at the finish line. Since running 1500m is likely akin to running a mile, it is interesting to find out how 1500m event athletes paced themselves in respect to their CS and D'. This blog post examined the pacing profiles of both male and female runners who competed in the 1500m finals at the Tokyo Olympics, whereby runners fought for podium positions instead of world records.
+
+I adopted the same approach as the research study to calculate the CS and D' of all the athletes. Data of individual personal best performances between 800-5000m were extracted from the IAAF database, and the linear regression method was used to derive the CS and D'. Given that very old records may not reflect the athlete's current fitness level accurately, personal bests achieved before 2014 were excluded from the calculation.
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<div id="dqwupufglr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#dqwupufglr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dqwupufglr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dqwupufglr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dqwupufglr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dqwupufglr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dqwupufglr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dqwupufglr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dqwupufglr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dqwupufglr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dqwupufglr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dqwupufglr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dqwupufglr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dqwupufglr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dqwupufglr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#dqwupufglr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#dqwupufglr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dqwupufglr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#dqwupufglr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dqwupufglr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dqwupufglr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dqwupufglr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dqwupufglr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dqwupufglr .gt_left {
+  text-align: left;
+}
+
+#dqwupufglr .gt_center {
+  text-align: center;
+}
+
+#dqwupufglr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dqwupufglr .gt_font_normal {
+  font-weight: normal;
+}
+
+#dqwupufglr .gt_font_bold {
+  font-weight: bold;
+}
+
+#dqwupufglr .gt_font_italic {
+  font-style: italic;
+}
+
+#dqwupufglr .gt_super {
+  font-size: 65%;
+}
+
+#dqwupufglr .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#dqwupufglr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#dqwupufglr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#dqwupufglr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#dqwupufglr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dqwupufglr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dqwupufglr .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+  <table class="gt_table">
+<thead class="gt_header">
+<tr>
+<td colspan="6" class="gt_heading gt_title gt_font_normal gt_bottom_border" style><strong>Tokyo Olympics 1500m Finalists</strong></td>
+</tr>
+
+</thead>
+<thead class="gt_col_headings">
+<tr>
+<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"></th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Critical Speed<br>(m/s)</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Work Capacity<br>(m)</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Result</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Average Speed<br>(m/s)</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Percentage of<br>Critical Speed<br>(%)</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row">
+<td colspan="6" class="gt_group_heading" style="border-top-width: 3px; border-top-style: solid; border-top-color: black; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Male</td>
+</tr>
+<tr class="gt_row_group_first"><th scope="row" class="gt_row gt_left gt_stub">Jakob Ingebrigtsen</th>
+<td class="gt_row gt_center">6.32</td>
+<td class="gt_row gt_center">155.88</td>
+<td class="gt_row gt_center">03:28:00</td>
+<td class="gt_row gt_center">7.21</td>
+<td class="gt_row gt_center">114.01</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Timothy Cheruiyot</th>
+<td class="gt_row gt_center">5.74</td>
+<td class="gt_row gt_center">262.96</td>
+<td class="gt_row gt_center">03:29:00</td>
+<td class="gt_row gt_center">7.18</td>
+<td class="gt_row gt_center">125.10</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Abel Kipsang</th>
+<td class="gt_row gt_center">5.98</td>
+<td class="gt_row gt_center">199.07</td>
+<td class="gt_row gt_center">03:29:00</td>
+<td class="gt_row gt_center">7.18</td>
+<td class="gt_row gt_center">120.00</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Josh Kerr</th>
+<td class="gt_row gt_center">5.85</td>
+<td class="gt_row gt_center">194.94</td>
+<td class="gt_row gt_center">03:29:00</td>
+<td class="gt_row gt_center">7.18</td>
+<td class="gt_row gt_center">122.66</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Adel Mechaal</th>
+<td class="gt_row gt_center">6.08</td>
+<td class="gt_row gt_center">188.71</td>
+<td class="gt_row gt_center">03:30:00</td>
+<td class="gt_row gt_center">7.14</td>
+<td class="gt_row gt_center">117.36</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Stewart McSweyn</th>
+<td class="gt_row gt_center">6.08</td>
+<td class="gt_row gt_center">225.51</td>
+<td class="gt_row gt_center">03:31:00</td>
+<td class="gt_row gt_center">7.11</td>
+<td class="gt_row gt_center">116.91</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Cole Hocker</th>
+<td class="gt_row gt_center">6.04</td>
+<td class="gt_row gt_center">184.32</td>
+<td class="gt_row gt_center">03:31:00</td>
+<td class="gt_row gt_center">7.11</td>
+<td class="gt_row gt_center">117.71</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Michal Rozmys</th>
+<td class="gt_row gt_center">5.70</td>
+<td class="gt_row gt_center">240.19</td>
+<td class="gt_row gt_center">03:32:00</td>
+<td class="gt_row gt_center">7.08</td>
+<td class="gt_row gt_center">124.13</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Jake Heyward</th>
+<td class="gt_row gt_center">5.93</td>
+<td class="gt_row gt_center">199.59</td>
+<td class="gt_row gt_center">03:34:00</td>
+<td class="gt_row gt_center">7.01</td>
+<td class="gt_row gt_center">118.12</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Oliver Hoare</th>
+<td class="gt_row gt_center">6.02</td>
+<td class="gt_row gt_center">145.21</td>
+<td class="gt_row gt_center">03:35:00</td>
+<td class="gt_row gt_center">6.98</td>
+<td class="gt_row gt_center">116.00</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Jake Wightman</th>
+<td class="gt_row gt_center">5.60</td>
+<td class="gt_row gt_center">264.12</td>
+<td class="gt_row gt_center">03:35:00</td>
+<td class="gt_row gt_center">6.98</td>
+<td class="gt_row gt_center">124.55</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Charles Grethen</th>
+<td class="gt_row gt_center">5.70</td>
+<td class="gt_row gt_center">227.81</td>
+<td class="gt_row gt_center">03:36:00</td>
+<td class="gt_row gt_center">6.94</td>
+<td class="gt_row gt_center">121.70</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Ignacio Fontes</th>
+<td class="gt_row gt_center">5.44</td>
+<td class="gt_row gt_center">266.54</td>
+<td class="gt_row gt_center">03:38:00</td>
+<td class="gt_row gt_center">6.88</td>
+<td class="gt_row gt_center">126.51</td></tr>
+<tr class="gt_group_heading_row">
+<td colspan="6" class="gt_group_heading" style="border-top-width: 3px; border-top-style: solid; border-top-color: black; border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: black;">Female</td>
+</tr>
+<tr class="gt_row_group_first"><th scope="row" class="gt_row gt_left gt_stub">Faith Kipyegon</th>
+<td class="gt_row gt_center">5.55</td>
+<td class="gt_row gt_center">181.89</td>
+<td class="gt_row gt_center">03:53:00</td>
+<td class="gt_row gt_center">6.44</td>
+<td class="gt_row gt_center">116.00</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Laura Muir</th>
+<td class="gt_row gt_center">5.40</td>
+<td class="gt_row gt_center">203.50</td>
+<td class="gt_row gt_center">03:54:00</td>
+<td class="gt_row gt_center">6.41</td>
+<td class="gt_row gt_center">118.61</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Sifan Hassan</th>
+<td class="gt_row gt_center">5.63</td>
+<td class="gt_row gt_center">167.16</td>
+<td class="gt_row gt_center">03:55:00</td>
+<td class="gt_row gt_center">6.38</td>
+<td class="gt_row gt_center">113.31</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Freweyni Gebreezibeher<sup class="gt_footnote_marks">1</sup></th>
+<td class="gt_row gt_center">5.88</td>
+<td class="gt_row gt_center">111.76</td>
+<td class="gt_row gt_center">03:57:00</td>
+<td class="gt_row gt_center">6.33</td>
+<td class="gt_row gt_center">107.61</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Gabriela Debues-Stafford</th>
+<td class="gt_row gt_center">5.48</td>
+<td class="gt_row gt_center">163.58</td>
+<td class="gt_row gt_center">03:58:00</td>
+<td class="gt_row gt_center">6.30</td>
+<td class="gt_row gt_center">114.97</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Linden Hall</th>
+<td class="gt_row gt_center">5.23</td>
+<td class="gt_row gt_center">211.84</td>
+<td class="gt_row gt_center">03:59:00</td>
+<td class="gt_row gt_center">6.28</td>
+<td class="gt_row gt_center">120.05</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Winnie Nanyondo</th>
+<td class="gt_row gt_center">4.94</td>
+<td class="gt_row gt_center">262.28</td>
+<td class="gt_row gt_center">03:59:00</td>
+<td class="gt_row gt_center">6.28</td>
+<td class="gt_row gt_center">127.25</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Nozomi Tanaka</th>
+<td class="gt_row gt_center">5.40</td>
+<td class="gt_row gt_center">156.39</td>
+<td class="gt_row gt_center">03:59:00</td>
+<td class="gt_row gt_center">6.28</td>
+<td class="gt_row gt_center">116.35</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Marta Perez</th>
+<td class="gt_row gt_center">4.96</td>
+<td class="gt_row gt_center">248.97</td>
+<td class="gt_row gt_center">04:00:00</td>
+<td class="gt_row gt_center">6.25</td>
+<td class="gt_row gt_center">125.93</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Elinor Purrier St. Pierre</th>
+<td class="gt_row gt_center">5.37</td>
+<td class="gt_row gt_center">176.30</td>
+<td class="gt_row gt_center">04:01:00</td>
+<td class="gt_row gt_center">6.22</td>
+<td class="gt_row gt_center">115.78</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Jessica Hull</th>
+<td class="gt_row gt_center">5.50</td>
+<td class="gt_row gt_center">154.55</td>
+<td class="gt_row gt_center">04:02:00</td>
+<td class="gt_row gt_center">6.20</td>
+<td class="gt_row gt_center">112.78</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Cory Ann McGee</th>
+<td class="gt_row gt_center">4.92</td>
+<td class="gt_row gt_center">269.57</td>
+<td class="gt_row gt_center">04:05:00</td>
+<td class="gt_row gt_center">6.12</td>
+<td class="gt_row gt_center">124.33</td></tr>
+<tr><th scope="row" class="gt_row gt_left gt_stub">Kristiina Maki</th>
+<td class="gt_row gt_center">5.19</td>
+<td class="gt_row gt_center">197.79</td>
+<td class="gt_row gt_center">04:11:00</td>
+<td class="gt_row gt_center">5.98</td>
+<td class="gt_row gt_center">115.13</td></tr>
+</tbody>
+<tfoot class="gt_sourcenotes">
+<tr>
+<td class="gt_sourcenote" colspan="6">Table: @nxrunning | Data: Tokyo Olympics 2020 &amp; IAAF Database</td>
+</tr>
+</tfoot>
+<tfoot class="gt_footnotes">
+<tr>
+<td class="gt_footnote" colspan="6"><sup class="gt_footnote_marks">1</sup> CS and D&#39; values are likely inaccurate due to only two personal best records available</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</body>
+</html>
+```
+The table above presents the CS and D' values of all 1500m event finalists. Ingebrigtsen and Gebreezibeher have the highest CS values among the males and females, respectively. However, please note that the prediction of CS and D' for Gebreezibeher may be potentially erroneous due to availability of only two personal best records. In terms of D', Wightman and McGee possess the highest values within their gender groups. This table clearly suggests that physiology in the context of CS and D' values can differ among runners at such elite levels.
+
+The table also informs us the performances of all runners in the finals. As expected, the intensities of the race for both gender groups were beyond CS. On average, athletes ran at approximately 18% above their CS, which corresponds to a speed that diminished 0.51% of their D' every second.
+
+![Pacing profiles of the top 6 athletes in the Tokyo Olympics Women's 1500m Finals](image4.webp)
+
+## Analysis of Women's Race
+
+The women's race was won in 03:53.1 by defending champion, Kipyegon. The silver and bronze medals went to Muir and Hassan, respectively. The figure above presents the pacing behaviours exhibited by the top 6 finishers. All female runners ran at a speed above CS throughout the race, and majority paced themselves in a manner whereby D' was completely depleted towards the end of the race.
+
+All runners started the race relatively close together in a pack and went through the first two laps at approximately 63-65 seconds per 400m. As illustrated in the figure above, the intensity of such pace can be different among the athletes due to their contrasting CS. For example, this pace corresponded to about 20% above CS for Hall while the same running speed was about 15% above CS for Kipyegon instead, who has a more superior CS. This suggests that Hall was working harder as compared to Kipyegon at similar running pace. At the same time, this also means that Hall was diminishing her D' at a faster rate than Kipyegon. Interestingly, despite Hall having greater D' (209.39m) than Kipyegon (180.47m), the rate of her D' decline was greater than Kipyegon due to her lower CS. This suggests that Hall was less likely to sustain the same pace as compared to Kipyegon. The running pack broke into two groups 1000m into the race and Hall expectedly had a difficult time hanging on to the leading group.
+
+The critical section of the race was at the 1200m mark, in which runners tend to compete for the final sprint to the finish line. As purported by the concept of CS, information on remaining D' may tell us the ability of athletes to further push their pace as well as the sustainability of their efforts. The medallists had greater D' remaining and led the charge in the last lap, with Kipyegon and Muir running the section between 1200 and 1400m at an impressive speed of 27% above CS. In contrast, as shown in the figure, Debues-Stafford started slowing beyond 1200m as her D' went into the negatives. By the 1400m mark, 5 out of the front 6 runners had emptied their tanks and slowing down of the speed for the final 100m was observed.
+
+The figure also highlights certain disagreements between our predictions and actual performances. First, based on the figure, Gebreezibeher ran the entire race at the lowest %CS and had the highest %D' remaining. However, she was not able to sustain her running speed in the last 100m despite her D' not completely depleted. This is likely attributed to the inaccuracy of her CS and D' values being calculated due to lack of available data. The performance suggests that she likely has either lower CS or D' than what was estimated. Second, the data also informs us that Hassan was expected to sustain the pace that Kipyegon and Muir ran in the last lap. Based on Kipyegon's running speed of 7.07m/s and their respective remaining D' values, Kipyegon, Hassan and Muir were estimated to sustain that pace for approximately 20.9s, 20.7s and 15.6s, respectively. However, Muir 'overperformed' while Hassan 'underperformed' in the race. Obviously, such disagreement could be due to a myriad of other factors that may influence the race performance as well as the inaccuracy of the CS and D' estimation.
+
+![Pacing profiles of the top 6 athletes in the Tokyo Olympics Men's 1500m Finals](image5.webp)
+
+## Analysis of Men's Race
+
+The men's race was a crackling race with top 6 finishers smashing the Olympics record. Ingebrigtsen won the race in 03:28.3 and was accompanied by Cheruiyot and Kerr on the podium. The pacing profiles of the top 6 runners are presented in the figure above. Similarly, we observe a general trend in which runners ran at a speed above CS throughout the race with complete depletion of D' towards the end of the race.
+
+Among the top 6 competitors, Cheruiyot started the race at the highest percentage above CS. Although he was working at a relatively higher intensity, his superior D' compensates for his efforts and he had the highest absolute remaining D' in the earlier stages of the race. This highlights the importance of examining an individual's workload with respect to both CS and D' together to predict fatigue accurately.
+
+Cheruiyot initiated the sprint in the last lap at a pace 25% above his CS, but he was unable to sustain his efforts over the last 100m. Ingebrigtsen displayed his superior physiology as he matched Cheruiyot's pace and managed to maintain that through the finish line. This suggests that Ingebrigtsen's present fitness level is likely higher than what we have estimated. Another surprising performance was from Kerr, who was the bronze medallist. As shown in the figure, his average effort over the race was 24% above his estimated CS and he was predicted to empty his tank by 1200m mark. However, he showed an incredible performance in the last lap, running at a speed faster than Cheruiyot and Ingebrigtsen. Based on his estimated D', his actual efforts would have over-depleted his D' by 44%. Certainly, he is way fitter than what was estimated.
+
+## Conclusion
+
+This blog post has demonstrated the use of the critical speed concept to gain meaningful insights into athlete's pacing behaviour in the 1500m event. Knowledge of one's CS and D' allows us to estimate how hard the athlete is working, and how long he or she can sustain such high-intensity efforts. Albeit a difficult task, accurate information of competitors' CS and D' values can help to inform optimal pacing strategy during the race. At the end of the day, the athlete with the most superior physiology tends to win the race, and the concept of critical speed helps us to understand why is it so.
+
+All analysis and visualisations were performed using R programming. You may access the data and codes at my [[github]{.underline}](https://github.com/nxrunning/codelibrary/tree/Tokyo-Olympics-1500m-Analysis).
