@@ -6,8 +6,12 @@ website:
   site-url: https://nienxiangtou.com
   twitter-card:
       creator: "@nxrunning"
+      image: "profile.jpg"
       card-style: summary_large_image
   open-graph: true
+  comments:
+    utterances: 
+      repo: nxrunning/personalblog
   navbar:
     right:
       - text: About
