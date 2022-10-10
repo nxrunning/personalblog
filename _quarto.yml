@@ -17,14 +17,14 @@ website:
         href: https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/
       - icon: github
         href: https://github.com/nxrunning
-  open-graph: true
-  twitter-card:
-    site: "@nxrunning"
 format:
   html:
     theme: flatly
     css: styles.css
     highlight-style: eiffel
-
+    twitter-card:
+      creator: "@nxrunning"
+      card-style: summary_large_image
+    open-graph: true
 editor: visual
 
