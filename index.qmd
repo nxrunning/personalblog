@@ -16,6 +16,7 @@ about:
     - icon: google
       text: Google Scholar
       href: https://scholar.google.com/citations?user=OsGUOBIAAAAJ&hl=en&oi=ao
+comments: false
 ---
 
 Hi, welcome to my personal blog! I am a researcher and a data enthusiast. I am passionate about using data to gain insights and solve problems.
