@@ -4,11 +4,10 @@ project:
 website:
   title: "Nien Xiang Tou"
   site-url: https://nienxiangtou.com
-  favicon: profile.jpg
+  favicon: profilephoto.jfif
   description: "Personal blog that documents my personal projects"
   twitter-card:
     creator: "@nxrunning"
-    image: "profile.jpg"
     card-style: summary_large_image
   open-graph: true
   comments:
