@@ -4,6 +4,8 @@ project:
 website:
   title: "Nien Xiang Tou"
   site-url: https://nienxiangtou.com
+  favicon: profile.jpg
+  description: "Personal blog that documents my personal projects"
   twitter-card:
     creator: "@nxrunning"
     image: "profile.jpg"
