@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nienxiangtou.com/index.html</loc>
-    <lastmod>2022-10-10T03:20:37.843Z</lastmod>
+    <lastmod>2022-10-10T03:22:38.587Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/blog.html</loc>
-    <lastmod>2022-10-10T03:21:00.435Z</lastmod>
+    <lastmod>2022-10-10T03:23:04.517Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html</loc>
@@ -15,5 +15,17 @@
   <url>
     <loc>https://nienxiangtou.com/posts/Tokyo-olympics-1500m-analysis/index.html</loc>
     <lastmod>2022-10-10T03:20:59.852Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/All-about-that-bayes/index.html</loc>
+    <lastmod>2022-10-10T03:22:44.856Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/Radar-charts-football-visualisation/index.html</loc>
+    <lastmod>2022-10-10T03:22:52.836Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/End-spurt-in-marathon/index.html</loc>
+    <lastmod>2022-10-10T03:22:59.958Z</lastmod>
   </url>
 </urlset>
