@@ -3,6 +3,11 @@ project:
 
 website:
   title: "Nien Xiang Tou"
+  site-url: https://nienxiangtou.com
+  twitter-card:
+      creator: "@nxrunning"
+      card-style: summary_large_image
+  open-graph: true
   navbar:
     right:
       - text: About
@@ -22,9 +27,5 @@ format:
     theme: flatly
     css: styles.css
     highlight-style: eiffel
-    twitter-card:
-      creator: "@nxrunning"
-      card-style: summary_large_image
-    open-graph: true
 editor: visual
 
