@@ -18,5 +18,28 @@
       "/posts/Can-possession-predict-wins-in-football/index.html",
       "/posts/Your-perception-is-your-reality/index.html"
     ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/Publications.html",
+      "/posts/All-about-that-bayes/index.html",
+      "/posts/Animated-data-viz-covid19/index.html",
+      "/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html",
+      "/blog.html",
+      "/posts/Can-possession-predict-wins-in-football/index.html",
+      "/posts/Is-the-EPL-getting-more-competitive/index.html",
+      "/posts/lactate-paradox/index.html",
+      "/posts/Liverpool-success-lucky-or-worthy-winners/index.html",
+      "/about.html",
+      "/posts/Pace-variation-in-marathon-running/index.html",
+      "/posts/Radar-charts-football-visualisation/index.html",
+      "/posts/Spatial-visualisation-covid-clusters-sgp/index.html",
+      "/posts/End-spurt-in-marathon/index.html",
+      "/posts/Tokyo-olympics-1500m-analysis/index.html",
+      "/posts/web-scraping-goodreads/index.html",
+      "/posts/web-scraping-and-data-visualising-with-R-EPL19/20-goal-stats/index.html",
+      "/posts/Your-perception-is-your-reality/index.html"
+    ]
   }
 ]

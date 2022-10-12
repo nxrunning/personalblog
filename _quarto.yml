@@ -27,10 +27,22 @@ website:
         href: https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/
       - icon: github
         href: https://github.com/nxrunning
+  page-footer:
+    left: "Blog made with 💙 and [Quarto](https://quarto.org/), by Tou Nien Xiang"
+    right:
+      - icon: twitter
+        href: https://twitter.com/nxrunning
+      - icon: linkedin
+        href: https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/
+      - icon: github
+        href: https://github.com/nxrunning
+      - icon: envelope
+        href: mailto:nienxiang@gmail.com
 format:
   html:
     theme: flatly
     css: styles.css
     highlight-style: eiffel
+    footnotes-hover: true
 editor: visual
 

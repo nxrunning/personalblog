@@ -1,8 +1,8 @@
 /* css styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald');
 
 h1.title {
-  font-family: "Pacifico";
+  font-family: "Oswald";
   font-size: 30px;
 }
