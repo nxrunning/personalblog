@@ -10,6 +10,7 @@ website:
     creator: "@nxrunning"
     card-style: summary_large_image
   open-graph: true
+  google-analytics: "G-LQ0DX5L71X"
   comments:
     utterances: 
       repo: nxrunning/personalblog
