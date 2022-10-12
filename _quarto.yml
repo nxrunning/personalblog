@@ -40,6 +40,9 @@ website:
         href: mailto:nienxiang@gmail.com
 format:
   html:
+    twitter-card:
+      creator: "@nxrunning"
+      card-style: summary_large_image
     theme: flatly
     css: styles.css
     highlight-style: eiffel
