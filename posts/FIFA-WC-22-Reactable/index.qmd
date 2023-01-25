@@ -13,6 +13,7 @@ execute:
 format:
   html:
     code-fold: true
+    code-block-border-left: "#36454F"
 ---
 
 Data visualisation is a key aspect of communicating our story or message behind the data we have. While it is common to visualise data using a myriad of graphs, tables may be more appropriate or effective at times to present numerous data information. In addition, such mode of data visualisation can be even more effective by allowing readers to interact with the table. This blog post documents my attempt to visualise data on the FIFA World Cup 22 participating teams with interactive tables using R programming language.
