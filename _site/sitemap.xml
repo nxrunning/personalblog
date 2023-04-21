@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nienxiangtou.com/index.html</loc>
-    <lastmod>2023-02-03T07:49:39.825Z</lastmod>
+    <lastmod>2023-02-03T08:02:39.933Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/blog.html</loc>
-    <lastmod>2023-02-03T07:49:44.590Z</lastmod>
+    <lastmod>2023-02-03T08:02:42.323Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html</loc>
@@ -78,6 +78,10 @@
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Physical-performance-shiny-dashboard/index.html</loc>
-    <lastmod>2023-02-03T07:49:46.888Z</lastmod>
+    <lastmod>2023-02-03T08:02:45.129Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/Publications.html</loc>
+    <lastmod>2023-04-21T06:28:30.282Z</lastmod>
   </url>
 </urlset>
