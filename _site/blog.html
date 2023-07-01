@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -99,12 +99,15 @@ gtag('js', new Date());
 gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Nien Xiang Tou - Blog">
+<meta property="og:image" content="https://nienxiangtou.com/posts/Gashapon-Simulation/image.jpg">
 <meta property="og:site-name" content="Nien Xiang Tou">
 <meta name="twitter:title" content="Nien Xiang Tou - Blog">
+<meta name="twitter:image" content="https://nienxiangtou.com/posts/Gashapon-Simulation/image.jpg">
 <meta name="twitter:creator" content="@nxrunning">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -120,40 +123,42 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
     <span class="navbar-title">Nien Xiang Tou</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page">
+    <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Publications.html">
+    <a class="nav-link" href="./Publications.html" rel="" target="">
  <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/nxrunning"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/nxrunning" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/"><i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/" rel="" target=""><i class="bi bi-linkedin" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/nxrunning"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/nxrunning" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -164,7 +169,7 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(17)</span></div><div class="category" data-category="Ageing">Ageing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data science">Data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Data visualisation">Data visualisation <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Sport science">Sport science <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(18)</span></div><div class="category" data-category="Ageing">Ageing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data science">Data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Data visualisation">Data visualisation <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Sport science">Sport science <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -191,7 +196,37 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Ageing" data-listing-date-sort="1675353600000" data-listing-file-modified-sort="1675411353782" data-listing-reading-time-sort="8.085">
+<div class="g-col-1" data-index="0" data-categories="Statistics" data-listing-date-sort="1688140800000" data-listing-file-modified-sort="1688201493288" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+<a href="./posts/Gashapon-Simulation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Gashapon-Simulation/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Solving my Gachapon frustration: Application of the Euler’s approximation for harmonic sums
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Statistics'); return false;">
+Statistics
+</div>
+</div>
+<div class="card-text listing-description">
+This post presents the use of the Euler’s approximation for harmonic sums to solve the capsule toy problem and simulations to verify the formula.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Nien Xiang Tou
+</div>
+<div class="listing-date">
+Jul 1, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Ageing" data-listing-date-sort="1675353600000" data-listing-file-modified-sort="1675411353782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
 <a href="./posts/Physical-performance-shiny-dashboard/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -221,7 +256,7 @@ Feb 3, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Data visualisation,Football" data-listing-date-sort="1669046400000" data-listing-file-modified-sort="1674613444564" data-listing-reading-time-sort="31.485">
+<div class="g-col-1" data-index="2" data-categories="Data visualisation,Football" data-listing-date-sort="1669046400000" data-listing-file-modified-sort="1674613444564" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="32">
 <a href="./posts/FIFA-WC-22-Reactable/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -254,7 +289,7 @@ Nov 22, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Statistics" data-listing-date-sort="1649952000000" data-listing-file-modified-sort="1665546871027" data-listing-reading-time-sort="10.45">
+<div class="g-col-1" data-index="3" data-categories="Statistics" data-listing-date-sort="1649952000000" data-listing-file-modified-sort="1665546871027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11">
 <a href="./posts/Bayesian-vs-Frequentist-Monty-Hall/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -284,7 +319,7 @@ Apr 15, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Sport science" data-listing-date-sort="1628438400000" data-listing-file-modified-sort="1665547676654" data-listing-reading-time-sort="17.275">
+<div class="g-col-1" data-index="4" data-categories="Sport science" data-listing-date-sort="1628438400000" data-listing-file-modified-sort="1665547676654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18">
 <a href="./posts/Tokyo-olympics-1500m-analysis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -314,7 +349,7 @@ Aug 9, 2021
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Statistics" data-listing-date-sort="1614787200000" data-listing-file-modified-sort="1665547026704" data-listing-reading-time-sort="6.98">
+<div class="g-col-1" data-index="5" data-categories="Statistics" data-listing-date-sort="1614787200000" data-listing-file-modified-sort="1665547026704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <a href="./posts/All-about-that-bayes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -344,7 +379,7 @@ Mar 4, 2021
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Data visualisation,Football" data-listing-date-sort="1606579200000" data-listing-file-modified-sort="1665547653538" data-listing-reading-time-sort="4.88">
+<div class="g-col-1" data-index="6" data-categories="Data visualisation,Football" data-listing-date-sort="1606579200000" data-listing-file-modified-sort="1665547653538" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <a href="./posts/Radar-charts-football-visualisation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -377,7 +412,7 @@ Nov 29, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Sport science" data-listing-date-sort="1595952000000" data-listing-file-modified-sort="1665547590498" data-listing-reading-time-sort="5.465">
+<div class="g-col-1" data-index="7" data-categories="Sport science" data-listing-date-sort="1595952000000" data-listing-file-modified-sort="1665547590498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <a href="./posts/End-spurt-in-marathon/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -407,7 +442,7 @@ Jul 29, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Football,Data visualisation" data-listing-date-sort="1593619200000" data-listing-file-modified-sort="1665547623922" data-listing-reading-time-sort="5.105">
+<div class="g-col-1" data-index="8" data-categories="Football,Data visualisation" data-listing-date-sort="1593619200000" data-listing-file-modified-sort="1665547623922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <a href="./posts/Liverpool-success-lucky-or-worthy-winners/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -440,7 +475,7 @@ Jul 2, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Data visualisation" data-listing-date-sort="1590768000000" data-listing-file-modified-sort="1665547662282" data-listing-reading-time-sort="3.94">
+<div class="g-col-1" data-index="9" data-categories="Data visualisation" data-listing-date-sort="1590768000000" data-listing-file-modified-sort="1665547662282" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <a href="./posts/Spatial-visualisation-covid-clusters-sgp/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -470,7 +505,7 @@ May 30, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Sport science" data-listing-date-sort="1589558400000" data-listing-file-modified-sort="1665547643922" data-listing-reading-time-sort="4.16">
+<div class="g-col-1" data-index="10" data-categories="Sport science" data-listing-date-sort="1589558400000" data-listing-file-modified-sort="1665547643922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
 <a href="./posts/Pace-variation-in-marathon-running/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -500,7 +535,7 @@ May 16, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Data science" data-listing-date-sort="1588262400000" data-listing-file-modified-sort="1665547697499" data-listing-reading-time-sort="6.59">
+<div class="g-col-1" data-index="11" data-categories="Data science" data-listing-date-sort="1588262400000" data-listing-file-modified-sort="1665547697499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
 <a href="./posts/web-scraping-goodreads/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -530,7 +565,7 @@ May 1, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Sport science" data-listing-date-sort="1587744000000" data-listing-file-modified-sort="1665547613490" data-listing-reading-time-sort="2.025">
+<div class="g-col-1" data-index="12" data-categories="Sport science" data-listing-date-sort="1587744000000" data-listing-file-modified-sort="1665547613490" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
 <a href="./posts/lactate-paradox/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -560,7 +595,7 @@ Apr 25, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="Data visualisation" data-listing-date-sort="1584979200000" data-listing-file-modified-sort="1665547051514" data-listing-reading-time-sort="1.87">
+<div class="g-col-1" data-index="13" data-categories="Data visualisation" data-listing-date-sort="1584979200000" data-listing-file-modified-sort="1665547051514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <a href="./posts/Animated-data-viz-covid19/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -590,7 +625,7 @@ Mar 24, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="Data science,Football" data-listing-date-sort="1582128000000" data-listing-file-modified-sort="1665547686923" data-listing-reading-time-sort="5.545">
+<div class="g-col-1" data-index="14" data-categories="Data science,Football" data-listing-date-sort="1582128000000" data-listing-file-modified-sort="1665547686923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <a href="./posts/web-scraping-and-data-visualising-with-R-EPL19/20-goal-stats/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -623,7 +658,7 @@ Feb 20, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="Data science,Football" data-listing-date-sort="1581177600000" data-listing-file-modified-sort="1665547603018" data-listing-reading-time-sort="3.79">
+<div class="g-col-1" data-index="15" data-categories="Data science,Football" data-listing-date-sort="1581177600000" data-listing-file-modified-sort="1665547603018" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <a href="./posts/Is-the-EPL-getting-more-competitive/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -656,7 +691,7 @@ Feb 9, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="Data science,Football" data-listing-date-sort="1565193600000" data-listing-file-modified-sort="1665547576010" data-listing-reading-time-sort="5.43">
+<div class="g-col-1" data-index="16" data-categories="Data science,Football" data-listing-date-sort="1565193600000" data-listing-file-modified-sort="1665547576010" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
 <a href="./posts/Can-possession-predict-wins-in-football/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -689,7 +724,7 @@ Aug 8, 2019
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="16" data-categories="Sport science" data-listing-date-sort="1564761600000" data-listing-file-modified-sort="1665548335067" data-listing-reading-time-sort="3.565">
+<div class="g-col-1" data-index="17" data-categories="Sport science" data-listing-date-sort="1564761600000" data-listing-file-modified-sort="1665548335067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
 <a href="./posts/Your-perception-is-your-reality/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -751,9 +786,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -818,6 +867,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -863,6 +998,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Blog made with 💙 and <a href="https://quarto.org/">Quarto</a>, by Tou Nien Xiang</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

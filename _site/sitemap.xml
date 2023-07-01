@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nienxiangtou.com/index.html</loc>
-    <lastmod>2023-02-03T08:02:39.933Z</lastmod>
+    <lastmod>2023-07-01T08:51:45.625Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/blog.html</loc>
-    <lastmod>2023-02-03T08:02:42.323Z</lastmod>
+    <lastmod>2023-07-01T08:51:53.153Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html</loc>
-    <lastmod>2023-02-01T06:48:38.079Z</lastmod>
+    <lastmod>2023-06-30T06:54:12.332Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Tokyo-olympics-1500m-analysis/index.html</loc>
@@ -70,11 +70,11 @@
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/FIFA-WC-22-Reactable/index.html</loc>
-    <lastmod>2023-02-03T03:56:40.264Z</lastmod>
+    <lastmod>2023-04-21T07:17:25.851Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/about.html</loc>
-    <lastmod>2023-01-25T02:29:06.014Z</lastmod>
+    <lastmod>2023-06-30T16:36:57.099Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Physical-performance-shiny-dashboard/index.html</loc>
@@ -83,5 +83,17 @@
   <url>
     <loc>https://nienxiangtou.com/Publications.html</loc>
     <lastmod>2023-04-21T06:28:30.282Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/Estimation-of-EPL-win-rate-Grid-Approximation/index.html</loc>
+    <lastmod>2023-04-21T08:45:35.321Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/Durability_endurance_performance/index.html</loc>
+    <lastmod>2023-05-10T15:00:56.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/Gashapon-Simulation/index.html</loc>
+    <lastmod>2023-07-01T08:51:55.971Z</lastmod>
   </url>
 </urlset>

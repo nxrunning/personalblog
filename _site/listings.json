@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/Gashapon-Simulation/index.html",
       "/posts/Physical-performance-shiny-dashboard/index.html",
       "/posts/FIFA-WC-22-Reactable/index.html",
       "/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html",
