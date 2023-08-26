@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nien Xiang Tou">
+<meta name="dcterms.date" content="2023-08-26">
+<meta name="description" content="This post writes about the research behind a newly proposed physiological measure and its applications in prolonged endurance exercise performance.">
+
+<title>Nien Xiang Tou - Durability - The New Physiological Measure to Predict Endurance Performance</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../profilephoto.jfif" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LQ0DX5L71X"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Nien Xiang Tou - Durability - The New Physiological Measure to Predict Endurance Performance">
+<meta property="og:description" content="This post writes about the research behind a newly proposed physiological measure and its applications in prolonged endurance exercise performance.">
+<meta property="og:image" content="https://nienxiangtou.com/posts/Durability-endurance-performance/image1.jpg">
+<meta property="og:site-name" content="Nien Xiang Tou">
+<meta name="twitter:title" content="Nien Xiang Tou - Durability - The New Physiological Measure to Predict Endurance Performance">
+<meta name="twitter:description" content="This post writes about the research behind a newly proposed physiological measure and its applications in prolonged endurance exercise performance.">
+<meta name="twitter:image" content="https://nienxiangtou.com/posts/Durability-endurance-performance/image1.jpg">
+<meta name="twitter:creator" content="@nxrunning">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Nien Xiang Tou</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nxrunning" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nxrunning" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Durability - The New Physiological Measure to Predict Endurance Performance</h1>
+                  <div>
+        <div class="description">
+          This post writes about the research behind a newly proposed physiological measure and its applications in prolonged endurance exercise performance.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Sport science</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nien Xiang Tou </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 26, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#concept-of-durability" id="toc-concept-of-durability" class="nav-link active" data-scroll-target="#concept-of-durability">Concept of Durability</a></li>
+  <li><a href="#measurement-of-durability" id="toc-measurement-of-durability" class="nav-link" data-scroll-target="#measurement-of-durability">Measurement of Durability</a></li>
+  <li><a href="#practical-implications" id="toc-practical-implications" class="nav-link" data-scroll-target="#practical-implications">Practical Implications</a>
+  <ul class="collapse">
+  <li><a href="#exercise-testing" id="toc-exercise-testing" class="nav-link" data-scroll-target="#exercise-testing">Exercise Testing</a></li>
+  <li><a href="#exercise-prescription" id="toc-exercise-prescription" class="nav-link" data-scroll-target="#exercise-prescription">Exercise Prescription</a></li>
+  <li><a href="#performance-regulation" id="toc-performance-regulation" class="nav-link" data-scroll-target="#performance-regulation">Performance Regulation</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>If you are watching an elite marathon race and new to the sport, you are unlikely to identify who are the better runners or potential winners during the initial stages. The early stages of an endurance race such as a marathon are often characterised by relatively large number of athletes running comfortably together, with little clues of differentiation among them. The contrast in performance between runners typically becomes more apparent as the race progresses, with the number of runners in the leading pack diminishing with time. For example, in the women’s race of this year’s Boston Marathon, the lead pack started with over 30 athletes, reducing to 11 at the halfway mark, and 5 athletes battled for the win at the 40km mark. Such phenomenon of attrition is often attributed to superior physiological traits like maximal oxygen consumption (VO2max), lactate threshold and running economy. Recent research suggests that differences in endurance performance may also be attributed to a new physiological trait termed durability.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image1.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Lead pack of runners at the Boston Marathon 2023 women’s race. Source: Kevin Morris, Runner’s World</figcaption>
+</figure>
+</div>
+<section id="concept-of-durability" class="level2">
+<h2 class="anchored" data-anchor-id="concept-of-durability">Concept of Durability</h2>
+<p>The concept of durability in endurance sports performance was first introduced two years ago in the <em>Sports Medicine</em> journal. Interestingly, the definition of the concept is quite close to its meaning in lay language, which represents the ability to last over time. In the journal article, it was technically defined as “the time of onset and magnitude of deterioration in physiological-profiling characteristics over time during prolonged exercise”<span class="citation" data-cites="maunder2021">(<a href="#ref-maunder2021" role="doc-biblioref">Maunder et al. 2021</a>)</span>. Performance-wise, this simply refers to the degree of resilience to fatigue in an athlete. In the context of prolonged exercise performance, a more “durable” athlete would be able to last longer at a certain intensity as compared to a less “durable” athlete.</p>
+<p>In the world of endurance sports, it has long been recognized that VO2max, lactate threshold and efficiency are the key determinants of performance <span class="citation" data-cites="joyner2008">(<a href="#ref-joyner2008" role="doc-biblioref">Joyner and Coyle 2008</a>)</span>. Indeed, the identification of runners who have the physiological potential to run a 2-hour marathon in the Nike’s “Breaking 2” project had been primarily based on these parameters <span class="citation" data-cites="jones2021">(<a href="#ref-jones2021" role="doc-biblioref">Jones et al. 2021</a>)</span>. Unsurprisingly, these measures serve as indices of fitness and markers of exercise intensity levels. For example, the use of critical power/speed or maximal lactate steady state are often used to segregate between the “heavy” and “severe” intensity domains. Thus, these measures collectively help in building the physiological profiles of athletes with implications for performance regulation and training prescription.</p>
+<p>While these physiological variables are clearly imperative, it was critiqued that these measures do not account for its changes over time thus undermining its usefulness in exercise regulation after prolonged periods. Theoretically, intensity levels below the “severe” intensity domain are purported to achieve steady state, which means that physiological variables would stabilize and thus efforts are relatively sustainable. However, contrary to what the term suggests, it was argued that there is no true steady state during prolonged exercise. Regardless of how low the exercise intensity is, there would be changes to one’s physiology and the athlete would experience fatigue eventually. For example, if you are on a low intensity long run for several hours at a constant speed of 10 kilometres per hour, you would expectedly feel harder at the last hour as compared to the first hour. This difference in subjective fatigue is likely a manifestation of underlying changes in your physiology with time. Empirical evidence has demonstrated that one’s critical power is reduced after 2 hours of heavy-intensity work <span class="citation" data-cites="clark2018">(<a href="#ref-clark2018" role="doc-biblioref">CLARK et al. 2018a</a>)</span>, which suggests that there are differences in physiological profiles between fatigued and rested state. Hence, the traditional key physiological measures that are often established in a fresh state may be limited to explain performance in very prolonged exercise. Indeed, this point was highlighted by one of the authors, Dr Stephen Seiler, on <a href="https://scientifictriathlon.com/tts295/#t-1625455221528">That Triathlon Show</a> podcast in which he argued that an athlete’s fresh physiological state “is not a number that is relevant four hours into a race”.</p>
+<p>Durability is posited to fill this limitation gap by quantifying the difference between physiological profiles during fresh and fatigued states. Athletes with similar physiological profiles under rested conditions may have very different profiles under fatigue, suggesting contrasts in resilience to deterioration. Thus, the concept of durability presents itself as a promising measure to add to the physiological toolbox and could potentially better help to explain inter-individual differences in performance. This is supported by a study on professional cyclists, which showed that more successful cyclists tend to have a smaller decline in their power output after high amount of work done as compared to their less successful counterparts <span class="citation" data-cites="vanerp2021">(<a href="#ref-vanerp2021" role="doc-biblioref">VAN ERP, SANDERS, and LAMBERTS 2021</a>)</span>.</p>
+</section>
+<section id="measurement-of-durability" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-of-durability">Measurement of Durability</h2>
+<p>While the idea of durability seems theoretically attractive, much research work remains to be conducted on how best to measure it. Based on the definition of durability above, it can be simply quantified as the change in physiological profile over time. Recent research has focused on the power-duration relationship and demonstrated observations of deterioration in critical power between fresh and fatigued states in laboratory settings <span class="citation" data-cites="clark2018a spragg2022">(<a href="#ref-clark2018a" role="doc-biblioref">CLARK et al. 2018b</a>; <a href="#ref-spragg2022" role="doc-biblioref">SPRAGG, LEO, and SWART 2022</a>)</span>. The article on durability also proposed an interesting approach to quantify durability in field data by measuring the extent of uncoupling between heart rate responses and power/pace output. Such uncoupling is a common phenomenon in prolonged exercise termed cardiovascular drift, in which cardiovascular responses tend to drift upwards in the absence of change in workload. The authors proposed that the deviation from the linear relationship between internal and external workload could be an indicator of the change in physiological profile during prolonged exercise.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Above is an example that I created of a visualisation illustrating the change in the ratio between internal and external workload during an endurance race. It is based on <a href="https://www.strava.com/activities/6345501116">public Strava data</a> from Singapore’s national runner, Soh Rui Yong in the Valencia Marathon race in 2021. Following similar computation approach from the article, internal workload is defined as percentage of heart rate reserve, and external workload is defined as percentage of 6-minute maximal pace. Estimations of these parameters were made due to missing information, in which heart rate reserve is assumed to be 160 beats (resting heart rate of 40 and maximum heart rate of 200) and 6-minute maximal pace is based on his average pace in his best 2.4km performance (i.e., 21.07 km/h). A ratio of 1 means change in heart rate responses is proportional to the change in workload. Values greater than 1 indicate that there is a disproportionate increase in internal load as compared to the external load, implying a deterioration in physiological profile.</p>
+<p>First, the fluctuations in the workload ratio values indicate that the heart rate responses captured are pretty noisy thus may not be the best data. Despite that, the visualization showcases the drift in heart rate responses during endurance exercise with majority of the workload ratio values above 1. This is explained by the greater variation in heart rate responses (5.8%) as compared to pace (2.1%). Nevertheless, the lack of linear relationship between time and workload ratio as evidenced in the visualization suggests that the athlete has reasonably good durability, which probably helps to partially explain the consistence in pace throughout the race. Given that this area of research is still relatively in its infancy, there remains a lack of benchmarks to interpret these changes in physiological profile during prolonged exercise.</p>
+</section>
+<section id="practical-implications" class="level2">
+<h2 class="anchored" data-anchor-id="practical-implications">Practical Implications</h2>
+<p>The recognition of physiological profiles being dynamic instead of static brings several practical implications in terms of exercise testing, training prescription and performance regulation.</p>
+<section id="exercise-testing" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-testing">Exercise Testing</h3>
+<p>Presently, exercise testing be it on the field or laboratories is typically conducted when athletes are fresh and well-rested. As mentioned above, the physiological capacity determined under such conditions lose some of its relevance in prolonged endurance events due to changes over time. Thus, quantifying an athlete’s durability by performing exercise testing under fatigued conditions would better inform the physiological profiles of endurance athletes. In addition, athletes may also estimate and monitor their durability from their training or performance data using the approach above.</p>
+</section>
+<section id="exercise-prescription" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-prescription">Exercise Prescription</h3>
+<p>Given that better durability potentially translates into better performance, it could act as a key training adaptation to be targeted in endurance athletes. This could occur in the absence of change in the traditional three physiological variables. Hence, components of training programmes should be planned with the specific aim of improving physiological resilience. While there is a lack of empirical evidence on how to do so currently, the principle of specificity probably hypothesises that longer durations of training session are likely beneficial to improve durability.</p>
+</section>
+<section id="performance-regulation" class="level3">
+<h3 class="anchored" data-anchor-id="performance-regulation">Performance Regulation</h3>
+<p>Pacing of efforts is critical in endurance sports, and knowledge of one’s durability such as magnitude of decline or time of decline helps to better plan pacing strategies and manage performance. Importantly, recognising the drift in heart rate responses during prolonged exercise highlights the limitation of solely pacing by heart rate. It has been argued that some of this cardiovascular drift may be ‘harmless’ and some may be deleterious, and endurance athletes should be wary of the latter.</p>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Ultimately, superior physiology wins the race in endurance sports and the concept of durability supports this notion by highlighting the importance of resilience to deterioration of physiological traits during prolonged exercise. This could be the trait that differentiates performance among endurance athletes. Indeed, well-known exercise physiologist, Dr Andrew Jones recently proposed that such physiological resilience to be considered the fourth key physiological variable of endurance exercise physiology alongside VO2max, lactate threshold and efficiency <span class="citation" data-cites="jones2023">(<a href="#ref-jones2023" role="doc-biblioref">Jones 2023</a>)</span>. I am excited to see more applications of this concept in the realm of endurance sports in the near future!</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-clark2018" class="csl-entry" role="listitem">
+CLARK, IDA E., ANNI VANHATALO, STEPHEN J. BAILEY, LEE J. WYLIE, BRETT S. KIRBY, BRAD W. WILKINS, and ANDREW M. JONES. 2018a. <span>“Effects of Two Hours of Heavy-Intensity Exercise on the Power<span></span>Duration Relationship.”</span> <em>Medicine &amp; Science in Sports &amp; Exercise</em> 50 (8): 1658–68. <a href="https://doi.org/10.1249/mss.0000000000001601">https://doi.org/10.1249/mss.0000000000001601</a>.
+</div>
+<div id="ref-clark2018a" class="csl-entry" role="listitem">
+———. 2018b. <span>“Effects of Two Hours of Heavy-Intensity Exercise on the Power<span></span>Duration Relationship.”</span> <em>Medicine &amp; Science in Sports &amp; Exercise</em> 50 (8): 1658–68. <a href="https://doi.org/10.1249/mss.0000000000001601">https://doi.org/10.1249/mss.0000000000001601</a>.
+</div>
+<div id="ref-jones2023" class="csl-entry" role="listitem">
+Jones, Andrew M. 2023. <span>“The Fourth Dimension: Physiological Resilience as an Independent Determinant of Endurance Exercise Performance.”</span> <em>The Journal of Physiology</em>, August. <a href="https://doi.org/10.1113/jp284205">https://doi.org/10.1113/jp284205</a>.
+</div>
+<div id="ref-jones2021" class="csl-entry" role="listitem">
+Jones, Andrew M., Brett S. Kirby, Ida E. Clark, Hannah M. Rice, Elizabeth Fulkerson, Lee J. Wylie, Daryl P. Wilkerson, Anni Vanhatalo, and Brad W. Wilkins. 2021. <span>“Physiological Demands of Running at 2-Hour Marathon Race Pace.”</span> <em>Journal of Applied Physiology</em> 130 (2): 369–79. <a href="https://doi.org/10.1152/japplphysiol.00647.2020">https://doi.org/10.1152/japplphysiol.00647.2020</a>.
+</div>
+<div id="ref-joyner2008" class="csl-entry" role="listitem">
+Joyner, Michael J., and Edward F. Coyle. 2008. <span>“Endurance Exercise Performance: The Physiology of Champions.”</span> <em>The Journal of Physiology</em> 586 (1): 35–44. <a href="https://doi.org/10.1113/jphysiol.2007.143834">https://doi.org/10.1113/jphysiol.2007.143834</a>.
+</div>
+<div id="ref-maunder2021" class="csl-entry" role="listitem">
+Maunder, Ed, Stephen Seiler, Mathew J. Mildenhall, Andrew E. Kilding, and Daniel J. Plews. 2021. <span>“The Importance of <span>‘</span>Durability<span>’</span> in the Physiological Profiling of Endurance Athletes.”</span> <em>Sports Medicine</em> 51 (8): 1619–28. <a href="https://doi.org/10.1007/s40279-021-01459-0">https://doi.org/10.1007/s40279-021-01459-0</a>.
+</div>
+<div id="ref-spragg2022" class="csl-entry" role="listitem">
+SPRAGG, JAMES, PETER LEO, and JEROEN SWART. 2022. <span>“The Relationship Between Physiological Characteristics and Durability in Male Professional Cyclists.”</span> <em>Medicine &amp; Science in Sports &amp; Exercise</em> 55 (1): 133–40. <a href="https://doi.org/10.1249/mss.0000000000003024">https://doi.org/10.1249/mss.0000000000003024</a>.
+</div>
+<div id="ref-vanerp2021" class="csl-entry" role="listitem">
+VAN ERP, TEUN, DAJO SANDERS, and ROBERT P. LAMBERTS. 2021. <span>“Maintaining Power Output with Accumulating Levels of Work Done Is a Key Determinant for Success in Professional Cycling.”</span> <em>Medicine &amp; Science in Sports &amp; Exercise</em> 53 (9): 1903–10. <a href="https://doi.org/10.1249/mss.0000000000002656">https://doi.org/10.1249/mss.0000000000002656</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<script src="https://utteranc.es/client.js" repo="nxrunning/personalblog" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Blog made with 💙 and <a href="https://quarto.org/">Quarto</a>, by Tou Nien Xiang</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/nxrunning">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/nien-xiang-tou-phd-a15594184/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nxrunning">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:nienxiang@gmail.com">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

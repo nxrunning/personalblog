@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nienxiangtou.com/index.html</loc>
-    <lastmod>2023-07-01T08:51:45.625Z</lastmod>
+    <lastmod>2023-08-26T03:09:50.746Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/blog.html</loc>
-    <lastmod>2023-07-01T09:04:12.844Z</lastmod>
+    <lastmod>2023-08-26T03:10:29.158Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html</loc>
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://nienxiangtou.com/Publications.html</loc>
-    <lastmod>2023-04-21T06:28:30.282Z</lastmod>
+    <lastmod>2023-08-25T17:12:49.723Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Estimation-of-EPL-win-rate-Grid-Approximation/index.html</loc>
@@ -95,5 +95,9 @@
   <url>
     <loc>https://nienxiangtou.com/posts/Gashapon-Simulation/index.html</loc>
     <lastmod>2023-07-01T09:04:10.145Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/Durability-endurance-performance/index.html</loc>
+    <lastmod>2023-08-26T03:11:03.830Z</lastmod>
   </url>
 </urlset>

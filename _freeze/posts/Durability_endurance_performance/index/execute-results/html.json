@@ -1,0 +1,14 @@
+{
+  "hash": "3a7ed7008dd34885c6cf82d91ce77328",
+  "result": {
+    "markdown": "---\ntitle: \"Durability - The New Physiological Measure to Predict Endurance Performance\"\nauthor: \"Nien Xiang Tou\"\ndate: \"2023-05-19\"\ncategories: [\"Sport science\"]\nimage: \"image.jpg\"\ndescription: \"This post writes about the research behind a newly proposed physiological measure and its applications in prolonged endurance exercise performance.\"\nexecute: \n  echo: false\n  warning: false\n  output: false\n  error: false\nformat:\n  html:\n    code-fold: true\n    code-block-border-left: \"#36454F\"\n---\n\n\nData visualisation is a key aspect of communicating our story or message behind the data we have. While it is common to visualise data using a myriad of graphs, tables may be more appropriate or effective at times to present numerous data information. In addition, such mode of data visualisation can be even more effective by allowing readers to interact with the table. This blog post documents my attempt to visualise data on the FIFA World Cup 22 participating teams with interactive tables using R programming language.\n\n![Sifan Hassan winning the London Marathon 2023. Source: The Economist Times](image.jpg)\n\n## Required Libraries\n\nThere are plenty of different packages available in R to create interactive tables. In this blog post, the [{reactable}]{style=\"color: navy\"} package was used to first build the interactive table and the [{reactablefmtr}]{style=\"color: navy\"} package was utilised for styling purpose. Besides that, [{tidyverse}]{style=\"color: navy\"} was used mainly to help with data wrangling.\n\n\n::: {.cell}\n\n```{.r .cell-code  code-fold=\"false\"}\nlibrary(reactable)\nlibrary(reactablefmtr)\nlibrary(tidyverse)\n```\n:::\n\n\n## Data\n\nThis post used a total of three datasets to show information of all FIFA World Cup 22's participating teams' historical appearances in the knockout stages of previous editions of the competition:\n\n1.  Results of all World Cup matches played in history (Source: [Kaggle](https://www.kaggle.com/datasets/evangower/fifa-world-cup?resource=download))\n\n2.  Participating teams in FIFA World Cup 22 and their respective FIFA rankings and points\n\n3.  Country flag dataset with URL addresses of country flag images\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
