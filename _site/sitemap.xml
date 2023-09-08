@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nienxiangtou.com/index.html</loc>
-    <lastmod>2023-08-26T03:09:50.746Z</lastmod>
+    <lastmod>2023-09-08T08:16:05.026Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/blog.html</loc>
-    <lastmod>2023-08-26T03:10:29.158Z</lastmod>
+    <lastmod>2023-09-08T14:22:05.210Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Bayesian-vs-Frequentist-Monty-Hall/index.html</loc>
-    <lastmod>2023-06-30T06:54:12.332Z</lastmod>
+    <lastmod>2023-09-03T12:09:27.331Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Tokyo-olympics-1500m-analysis/index.html</loc>
@@ -94,10 +94,14 @@
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Gashapon-Simulation/index.html</loc>
-    <lastmod>2023-07-01T09:04:10.145Z</lastmod>
+    <lastmod>2023-09-03T12:08:42.551Z</lastmod>
   </url>
   <url>
     <loc>https://nienxiangtou.com/posts/Durability-endurance-performance/index.html</loc>
     <lastmod>2023-08-26T03:11:03.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nienxiangtou.com/posts/Presidential-Election-Sampling-Inference/index.html</loc>
+    <lastmod>2023-09-08T14:22:01.372Z</lastmod>
   </url>
 </urlset>
