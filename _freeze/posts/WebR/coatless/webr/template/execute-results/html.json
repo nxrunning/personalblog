@@ -1,0 +1,16 @@
+{
+  "hash": "4aa9aa16b4e3f79065d216f374215a9b",
+  "result": {
+    "markdown": "---\ntitle: \"WebR-enabled code cell\"\nformat: html\nengine: knitr\n#webr:\n#  show-startup-message: false      # Display status of webR initialization\n#  show-header-message: false      # Check to see if COOP&COEP headers are set for speed.\n#  packages: ['ggplot2', 'dplyr'] # Pre-install dependencies\n#  home-dir: \"/home/rstudio\"      # Customize where the working directory is\n#  base-url: ''                   # Base URL used for downloading R WebAssembly binaries\n#  service-worker-url: ''         # URL from where to load JavaScript worker scripts when loading webR with the ServiceWorker communication channel.\nfilters:\n- webr\n---\n\n\n## Demo\n\nThis is a webr-enabled code cell in a Quarto HTML document.\n\n```{webr-r}\n1 + 1 \n```\n\n```{webr-r}\nfit = lm(mpg ~ am, data = mtcars)\nsummary(fit)\n```\n\n```{webr-r}\nplot(pressure)\n```\n",
+    "supporting": [
+      "template_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
