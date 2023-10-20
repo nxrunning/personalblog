@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/WebR/index.html",
       "/posts/Presidential-Election-Sampling-Inference/index.html",
       "/posts/Durability-endurance-performance/index.html",
       "/posts/Gashapon-Simulation/index.html",
