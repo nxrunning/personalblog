@@ -27,7 +27,7 @@ I also first heard of WebR at the Rstudio conference 2022 from a 5-min presentat
 
 Last month, I travelled to Chicago to attend my first Posit Conference in person, and there were several talks on new developments in Quarto. One exciting extension is the talk by James Balamuta on incorporating WebR into Quarto documents. While Quarto is able to publish code chunks and its outputs in the same document, the extension of WebR makes it dynamic by allowing interactive code cells.
 
-For example, click the `Run Code` button below and it will generate the code output within this document. **Importantly, it is interactive.** You may input your own R codes in the same cell and it will generate the output accordingly.
+For example, click the `Run Code` button below and it will generate the code output within this document. **Importantly, it is interactive.** You may input your own R codes in the same cell and it will generate the output accordingly. Noticeably, this will work not only on computers, but on phones and tablets as well.
 
 ```{webr-r}
 # This is interactive!
