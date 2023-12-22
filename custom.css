@@ -1,17 +1,8 @@
-/* css styles */
+/*-- scss:defaults --*/
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald');
+// replicate the CSS for a callout box with a custom title, icon, and default appearance
 
-h1.title {
-  font-family: "Oswald";
-  font-size: 30px;
-}
-
-h2 {
-  font-color: "navy"
-}
-
-.notebox {
+.solutionbox {
   margin-top: 1em;
   margin-bottom: 1em;  
   border-radius: .25rem;
@@ -19,10 +10,10 @@ h2 {
   border-right: solid 0.5px silver;
   border-top: solid 0.5px silver;
   border-bottom: solid 0.5px silver;
-  border-left-color: navy !important;
+  border-left-color: #9834eb !important;
 }
 
-.notebox-icon {
+.solutionbox-icon {
   height: 0.9rem;
   width: 0.9rem;
   display: inline-block;
@@ -31,10 +22,10 @@ h2 {
   background-size: 0.9rem 0.9rem;
   margin-top: .5rem;
   padding-right: 1.25rem;
-  background-image: url('lightbulb-regular.svg');
+  background-image: url('screwdriver-wrench-solid.png');
 }
 
-.notebox-header {
+.solutionbox-header {
   //margin-top: 0.5em;
   margin-bottom: 0.5em;
   border-bottom: none;
@@ -44,36 +35,23 @@ h2 {
   padding-left: 0.5em;
   padding-right: 0.5em;
   display: flex;
-  color: white;
-  background-color: #8b9dc3;
+  background-color: #f5e8ff;
   height: 2em;
   overflow: hidden;
 }
 
-.notebox-header p {
+.solutionbox-header p {
   padding-top: 0.2em;
 }
 
-.notebox-body {
+.solutionbox-body {
   font-size: 0.9rem;
   font-weight: 400;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
-.notebox-body > :last-child {
+.solutionbox-body > :last-child {
   padding-bottom: 0.5rem;
   margin-bottom: 0;
-}
-
-.researchquestion-icon {
-  height: 0.9rem;
-  width: 0.9rem;
-  display: inline-block;
-  content: "";
-  background-repeat: no-repeat;
-  background-size: 0.9rem 0.9rem;
-  margin-top: .5rem;
-  padding-right: 1.25rem;
-  background-image: url('circle-question-regular.svg');
 }
