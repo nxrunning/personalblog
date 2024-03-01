@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.358">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,7 +47,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
@@ -62,6 +62,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -110,6 +111,33 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Nien Xiang Tou - Blog">
 <meta property="og:site_name" content="Nien Xiang Tou">
@@ -122,7 +150,7 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
@@ -175,7 +203,7 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(22)</span></div><div class="category" data-category="Ageing">Ageing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Data science">Data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Data visualisation">Data visualisation <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(6)</span></div><div class="category" data-category="R Programming">R Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sport science">Sport science <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(23)</span></div><div class="category" data-category="Ageing">Ageing <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Data science">Data science <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Data visualisation">Data visualisation <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(6)</span></div><div class="category" data-category="R Programming">R Programming <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sport science">Sport science <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -201,9 +229,40 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 
 
 
+
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Statistics,Ageing" data-listing-date-sort="1702656000000" data-listing-file-modified-sort="1703231737955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3316">
+<div class="g-col-1" data-index="0" data-categories="Statistics" data-listing-date-sort="1709222400000" data-listing-file-modified-sort="1709281531051" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2303">
+<a href="./posts/Computing-P-Values-Using-Permutation-Test/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/Computing-P-Values-Using-Permutation-Test/image.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Computing P Values Using Permutation Test
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Statistics'); return false;">
+Statistics
+</div>
+</div>
+<div class="card-text listing-description">
+This post presents the use of resampling statistics in computing and understanding p-values.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Nien Xiang Tou
+</div>
+<div class="listing-date">
+Mar 1, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Statistics,Ageing" data-listing-date-sort="1703174400000" data-listing-file-modified-sort="1703231737955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3836">
 <a href="./posts/Frailty-transition-simulation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -222,21 +281,21 @@ Ageing
 </div>
 </div>
 <div class="card-text listing-description">
-This post presents the use of Markov chain to simulate transition of frailty states.
+This post presents the implementation of Markov chains in R programming language to simulate transition of frailty states.
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Nien Xiang Tou
 </div>
 <div class="listing-date">
-Dec 16, 2023
+Dec 22, 2023
 </div>
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="R Programming" data-listing-date-sort="1697731200000" data-listing-file-modified-sort="1697874003389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1030">
+<div class="g-col-1" data-index="2" data-categories="R Programming" data-listing-date-sort="1697731200000" data-listing-file-modified-sort="1697874003389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1030">
 <a href="./posts/WebR/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -266,7 +325,7 @@ Oct 20, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Statistics" data-listing-date-sort="1694102400000" data-listing-file-modified-sort="1694182912135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1753">
+<div class="g-col-1" data-index="3" data-categories="Statistics" data-listing-date-sort="1694102400000" data-listing-file-modified-sort="1694182912135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1753">
 <a href="./posts/Presidential-Election-Sampling-Inference/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -296,7 +355,7 @@ Sep 8, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Sport science" data-listing-date-sort="1692979200000" data-listing-file-modified-sort="1693019375038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1795">
+<div class="g-col-1" data-index="4" data-categories="Sport science" data-listing-date-sort="1692979200000" data-listing-file-modified-sort="1693019375038" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1795">
 <a href="./posts/Durability-endurance-performance/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -326,7 +385,7 @@ Aug 26, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Statistics" data-listing-date-sort="1688140800000" data-listing-file-modified-sort="1688202244358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
+<div class="g-col-1" data-index="5" data-categories="Statistics" data-listing-date-sort="1688140800000" data-listing-file-modified-sort="1688202244358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1177">
 <a href="./posts/Gashapon-Simulation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -356,7 +415,7 @@ Jul 1, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Ageing" data-listing-date-sort="1675353600000" data-listing-file-modified-sort="1675411353782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1617">
+<div class="g-col-1" data-index="6" data-categories="Ageing" data-listing-date-sort="1675353600000" data-listing-file-modified-sort="1675411353782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1617">
 <a href="./posts/Physical-performance-shiny-dashboard/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -386,7 +445,7 @@ Feb 3, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Data visualisation,Football" data-listing-date-sort="1669046400000" data-listing-file-modified-sort="1674613444564" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="32" data-listing-word-count-sort="6297">
+<div class="g-col-1" data-index="7" data-categories="Data visualisation,Football" data-listing-date-sort="1669046400000" data-listing-file-modified-sort="1674613444564" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="32" data-listing-word-count-sort="6297">
 <a href="./posts/FIFA-WC-22-Reactable/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -419,7 +478,7 @@ Nov 22, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Statistics" data-listing-date-sort="1649952000000" data-listing-file-modified-sort="1665546871027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2090">
+<div class="g-col-1" data-index="8" data-categories="Statistics" data-listing-date-sort="1649952000000" data-listing-file-modified-sort="1665546871027" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2090">
 <a href="./posts/Bayesian-vs-Frequentist-Monty-Hall/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -449,7 +508,7 @@ Apr 15, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Sport science" data-listing-date-sort="1628438400000" data-listing-file-modified-sort="1665547676654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3455">
+<div class="g-col-1" data-index="9" data-categories="Sport science" data-listing-date-sort="1628438400000" data-listing-file-modified-sort="1665547676654" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3455">
 <a href="./posts/Tokyo-olympics-1500m-analysis/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -479,7 +538,7 @@ Aug 9, 2021
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Statistics" data-listing-date-sort="1614787200000" data-listing-file-modified-sort="1665547026704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1396">
+<div class="g-col-1" data-index="10" data-categories="Statistics" data-listing-date-sort="1614787200000" data-listing-file-modified-sort="1665547026704" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1396">
 <a href="./posts/All-about-that-bayes/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -509,7 +568,7 @@ Mar 4, 2021
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Data visualisation,Football" data-listing-date-sort="1606579200000" data-listing-file-modified-sort="1665547653538" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="976">
+<div class="g-col-1" data-index="11" data-categories="Data visualisation,Football" data-listing-date-sort="1606579200000" data-listing-file-modified-sort="1665547653538" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="976">
 <a href="./posts/Radar-charts-football-visualisation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -542,7 +601,7 @@ Nov 29, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Sport science" data-listing-date-sort="1595952000000" data-listing-file-modified-sort="1665547590498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1093">
+<div class="g-col-1" data-index="12" data-categories="Sport science" data-listing-date-sort="1595952000000" data-listing-file-modified-sort="1665547590498" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1093">
 <a href="./posts/End-spurt-in-marathon/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -572,7 +631,7 @@ Jul 29, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="Football,Data visualisation" data-listing-date-sort="1593619200000" data-listing-file-modified-sort="1665547623922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1021">
+<div class="g-col-1" data-index="13" data-categories="Football,Data visualisation" data-listing-date-sort="1593619200000" data-listing-file-modified-sort="1665547623922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1021">
 <a href="./posts/Liverpool-success-lucky-or-worthy-winners/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -605,7 +664,7 @@ Jul 2, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="Data visualisation" data-listing-date-sort="1590768000000" data-listing-file-modified-sort="1665547662282" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="14" data-categories="Data visualisation" data-listing-date-sort="1590768000000" data-listing-file-modified-sort="1665547662282" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="./posts/Spatial-visualisation-covid-clusters-sgp/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -635,7 +694,7 @@ May 30, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="Sport science" data-listing-date-sort="1589558400000" data-listing-file-modified-sort="1665547643922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="832">
+<div class="g-col-1" data-index="15" data-categories="Sport science" data-listing-date-sort="1589558400000" data-listing-file-modified-sort="1665547643922" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="832">
 <a href="./posts/Pace-variation-in-marathon-running/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -665,7 +724,7 @@ May 16, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="Data science" data-listing-date-sort="1588262400000" data-listing-file-modified-sort="1665547697499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1318">
+<div class="g-col-1" data-index="16" data-categories="Data science" data-listing-date-sort="1588262400000" data-listing-file-modified-sort="1665547697499" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1318">
 <a href="./posts/web-scraping-goodreads/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -695,7 +754,7 @@ May 1, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="16" data-categories="Sport science" data-listing-date-sort="1587744000000" data-listing-file-modified-sort="1665547613490" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="405">
+<div class="g-col-1" data-index="17" data-categories="Sport science" data-listing-date-sort="1587744000000" data-listing-file-modified-sort="1665547613490" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="405">
 <a href="./posts/lactate-paradox/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -725,11 +784,11 @@ Apr 25, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="17" data-categories="Data visualisation" data-listing-date-sort="1584979200000" data-listing-file-modified-sort="1665547051514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="18" data-categories="Data visualisation" data-listing-date-sort="1584979200000" data-listing-file-modified-sort="1665547051514" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="./posts/Animated-data-viz-covid19/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./posts/Animated-data-viz-covid19/image.webp" class="thumbnail-image card-img" style="height: 150px;">
+<img data-src="./posts/Animated-data-viz-covid19/image.webp" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -755,7 +814,7 @@ Mar 24, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="18" data-categories="Data science,Football" data-listing-date-sort="1582128000000" data-listing-file-modified-sort="1665547686923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1109">
+<div class="g-col-1" data-index="19" data-categories="Data science,Football" data-listing-date-sort="1582128000000" data-listing-file-modified-sort="1665547686923" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1109">
 <a href="./posts/web-scraping-and-data-visualising-with-R-EPL19/20-goal-stats/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -788,7 +847,7 @@ Feb 20, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="19" data-categories="Data science,Football" data-listing-date-sort="1581177600000" data-listing-file-modified-sort="1665547603018" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="758">
+<div class="g-col-1" data-index="20" data-categories="Data science,Football" data-listing-date-sort="1581177600000" data-listing-file-modified-sort="1665547603018" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="758">
 <a href="./posts/Is-the-EPL-getting-more-competitive/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -821,7 +880,7 @@ Feb 9, 2020
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="20" data-categories="Data science,Football" data-listing-date-sort="1565193600000" data-listing-file-modified-sort="1665547576010" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
+<div class="g-col-1" data-index="21" data-categories="Data science,Football" data-listing-date-sort="1565193600000" data-listing-file-modified-sort="1665547576010" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1086">
 <a href="./posts/Can-possession-predict-wins-in-football/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -854,7 +913,7 @@ Aug 8, 2019
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="21" data-categories="Sport science" data-listing-date-sort="1564761600000" data-listing-file-modified-sort="1665548335067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="713">
+<div class="g-col-1" data-index="22" data-categories="Sport science" data-listing-date-sort="1564761600000" data-listing-file-modified-sort="1665548335067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="713">
 <a href="./posts/Your-perception-is-your-reality/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1020,15 +1079,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    if (id.startsWith('sec-')) {
+    if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
       if (note.children && note.children.length > 2) {
-        for (let i = 0; i < 2; i++) {
-          container.appendChild(note.children[i].cloneNode(true));
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
         }
         return container.innerHTML
       } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -1037,7 +1109,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      return note.innerHTML;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -1079,6 +1159,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
       }
     }, function(instance) {
     });
@@ -1154,7 +1257,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     window.addEventListener(
       "resize",
       throttle(() => {
-        console.log("RESIZE");
         elRect = undefined;
         if (selectedAnnoteEl) {
           selectCodeLines(selectedAnnoteEl);
