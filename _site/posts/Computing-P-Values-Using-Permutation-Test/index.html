@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -239,7 +239,7 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 <p>P values are often generated in statistical tests and used to aid statistical inference. This blog post presents how we can use resampling statistics through permutation tests to calculate p values. In addition, the blog post also aims to help us better understand p values through such approach.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="image.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="image.jpg" class="img-fluid figure-img"></p>
 <figcaption>Image generated using artificial intelligence via Google Gemini.</figcaption>
 </figure>
 </div>
@@ -748,7 +748,7 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 }
 </style>
 
-<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <thead>
 <tr class="header gt_col_headings">
 <th id="Gender" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Gender</th>
@@ -1283,7 +1283,7 @@ mean in group Female   mean in group Male
 }
 </style>
 
-<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <colgroup>
 <col style="width: 33%">
 <col style="width: 33%">
@@ -1432,7 +1432,7 @@ mean in group Female   mean in group Male
 <h2 class="anchored" data-anchor-id="round-up">Round-Up</h2>
 <p>This blog post presents how we can use a resampling approach such as the permutation test to calculate p values. P values are not just magical outputs from a statistical test. It is possible to compute them ‘manually’ through simulations such as the example above. This permutation test approach to compute p values is not only limited to comparison of means, and can be applied to almost any statistical test (e.g., medians, correlation coefficients).</p>
 <p>Personally, I find this approach helps me to better understand the definition of a p value in two ways. First, the act of reshuffling and randomly re-allocating the group labels illustrates the notion of assuming that the null hypothesis is true. Second, simulating the resampling for a large number of trials helps us to understand the meaning of a p value from a frequentist perspective.</p>
-<p>I hope this you find this useful as well!</p>
+<p>I hope you find this useful as well!</p>
 
 
 </section>
@@ -1517,6 +1517,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/nienxiangtou\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -1551,7 +1569,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
