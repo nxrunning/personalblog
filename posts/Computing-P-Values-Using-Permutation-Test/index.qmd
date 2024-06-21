@@ -256,4 +256,4 @@ This blog post presents how we can use a resampling approach such as the permuta
 
 Personally, I find this approach helps me to better understand the definition of a p value in two ways. First, the act of reshuffling and randomly re-allocating the group labels illustrates the notion of assuming that the null hypothesis is true. Second, simulating the resampling for a large number of trials helps us to understand the meaning of a p value from a frequentist perspective.
 
-I hope this you find this useful as well!
+I hope you find this useful as well!
