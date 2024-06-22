@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nien Xiang Tou">
+<meta name="dcterms.date" content="2024-06-22">
+<meta name="description" content="This post relates a Greek mythological tale to lessons in safeguarding against temptations of statistical malpractice.">
 
-<title>Nien Xiang Tou -</title>
+<title>Nien Xiang Tou - Ulysses Contract: Navigating the Tempting Waters of P-Hacking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,24 +23,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./profilephoto.jfif" rel="icon">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../profilephoto.jfif" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,24 +100,26 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Nien Xiang Tou -">
-<meta property="og:description" content="Personal blog that documents my personal projects">
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Nien Xiang Tou - Ulysses Contract: Navigating the Tempting Waters of P-Hacking">
+<meta property="og:description" content="This post relates a Greek mythological tale to lessons in safeguarding against temptations of statistical malpractice.">
+<meta property="og:image" content="https://nienxiangtou.com/posts/Ulysses-Contract/image.jpg">
 <meta property="og:site_name" content="Nien Xiang Tou">
-<meta name="twitter:title" content="Nien Xiang Tou -">
-<meta name="twitter:description" content="Personal blog that documents my personal projects">
+<meta name="twitter:title" content="Nien Xiang Tou - Ulysses Contract: Navigating the Tempting Waters of P-Hacking">
+<meta name="twitter:description" content="This post relates a Greek mythological tale to lessons in safeguarding against temptations of statistical malpractice.">
+<meta name="twitter:image" content="https://nienxiangtou.com/posts/Ulysses-Contract/image.jpg">
 <meta name="twitter:creator" content="@nxrunning">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Nien Xiang Tou</span>
     </a>
   </div>
@@ -104,15 +130,15 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Publications.html" aria-current="page"> 
+    <a class="nav-link" href="../../Publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item compact">
@@ -138,49 +164,138 @@ gtag('config', 'G-LQ0DX5L71X', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Ulysses Contract: Navigating the Tempting Waters of P-Hacking</h1>
+                  <div>
+        <div class="description">
+          This post relates a Greek mythological tale to lessons in safeguarding against temptations of statistical malpractice.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Statistics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nien Xiang Tou </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 22, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#p-hacking---quest-for-the-statistical-significance-holy-grail" id="toc-p-hacking---quest-for-the-statistical-significance-holy-grail" class="nav-link active" data-scroll-target="#p-hacking---quest-for-the-statistical-significance-holy-grail">P-Hacking - Quest for the Statistical Significance Holy Grail</a></li>
+  <li><a href="#ulysses-and-the-sirens" id="toc-ulysses-and-the-sirens" class="nav-link" data-scroll-target="#ulysses-and-the-sirens">Ulysses and the Sirens</a></li>
+  <li><a href="#ulysses-contracts---pre-commitment-strategies-to-combat-p-hacking" id="toc-ulysses-contracts---pre-commitment-strategies-to-combat-p-hacking" class="nav-link" data-scroll-target="#ulysses-contracts---pre-commitment-strategies-to-combat-p-hacking">Ulysses Contracts - Pre-commitment Strategies to Combat P-Hacking</a>
+  <ul class="collapse">
+  <li><a href="#pre-registration-of-studies" id="toc-pre-registration-of-studies" class="nav-link" data-scroll-target="#pre-registration-of-studies"><span style="color:#36454F">Pre-registration of Studies</span></a></li>
+  <li><a href="#registered-reports" id="toc-registered-reports" class="nav-link" data-scroll-target="#registered-reports"><span style="color:#36454F">Registered reports</span></a></li>
+  </ul></li>
+  <li><a href="#round-up" id="toc-round-up" class="nav-link" data-scroll-target="#round-up">Round-up</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<div class="quarto-about-marquee content">
-  <div class="about-image-container">
-  </div>
-  <div class="about-contents">
-     <main class="content" id="quarto-document-content">
-<section id="publications" class="level1">
-<h1><strong>Publications</strong></h1>
-<p>Please find my research work below.</p>
-<section id="journal-articles" class="level2">
-<h2 data-anchor-id="journal-articles"><span style="color: navy">Journal Articles</span></h2>
-<p>Yu, C. C., <strong>Tou, N. X.</strong>, &amp; Low, J. A. (2024). Internet use and effects on mental well-being during the lockdown phase of the COVID-19 pandemic in younger verus older adults: Observational cross-sectional study. <em>JMIR Formative Research, 8</em>, e46824. <a href="https://doi.org/10.2196/46824" class="uri">https://doi.org/10.2196/46824</a></p>
-<p>Lau, L. K., <strong>Tou, N. X.</strong>, Jabbar, A., Tang, J. Y., Gao, J., Ding, Y. Y., &amp; Ng, Y. S. (2023). The effects of exercise interventions on physical performance and activities of daily living in oldest-old and frail older adults: a review of the literature. <em>American Journal of Physical Medicine &amp; Rehabilitation</em>. <a href="https://doi.org/10.1097/phm.0000000000002246" class="uri">https://doi.org/10.1097/phm.0000000000002246</a></p>
-<p>Liu, X., <strong>Tou, N. X.</strong>, Gao, Q., Gwee, X., Wee, S. L., &amp; Ng, T. P. (2022). Frailty and risk of cardiovascular disease and mortality. <em>PloS One</em>, <em>17</em>(9), e0272527. <a href="https://doi.org/10.1371/journal.pone.0272527" class="uri">https://doi.org/10.1371/journal.pone.0272527</a></p>
-<p><strong>Tou, N. X.</strong>, Wee, S. L., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., ... &amp; Ng, T. P. (2022). Association of fat mass index versus appendicular lean mass index with physical function–The Yishun Study. <em>Aging and Health Research</em>, <em>2</em>(3), 100097. <a href="https://doi.org/10.1016/j.ahr.2022.100097" class="uri">https://doi.org/10.1016/j.ahr.2022.100097</a></p>
-<p>Chen, K. K., Lee, S. Y., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., <strong>Tou, N. X</strong>., ... &amp; Wee, S. L. (2022). Associations of low handgrip strength and hand laterality with cognitive function and functional mobility–the Yishun Study. <em>BMC Geriatrics</em>, <em>22</em>(1), 1-8. <a href="https://doi.org/10.1186/s12877-022-03363-2" class="uri">https://doi.org/10.1186/s12877-022-03363-2</a></p>
-<p>Yu, C. C., <strong>Tou, N. X.</strong>, &amp; Low, J. A. (2022). A comparative study on mental health and adaptability between older and younger adults during the COVID-19 circuit breaker in Singapore. <em>BMC Public Health, 22</em>(1), 1-11. <a href="https://doi.org/10.1186/s12889-022-12857-y" class="uri">https://doi.org/10.1186/s12889-022-12857-y</a></p>
-<p><strong>Tou, N. X.</strong>, Wee, S. L., Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., ... &amp; Ng, T. P. (2021). Associations of fat mass and muscle function but not lean mass with cognitive impairment: The Yishun Study. <em>Plos One, 16</em>(8), e0256702. <a href="https://doi.org/10.1371/journal.pone.0256702" class="uri">https://doi.org/10.1371/journal.pone.0256702</a></p>
-<p><strong>Tou, N. X.</strong>, Wee, S. L., Seah, W. T., Ng, D. H. M., Pang, B. W. J., Lau, L. K., &amp; Ng, T. P. (2021). Effectiveness of Community-Delivered Functional Power Training Program for Frail and Pre-frail Community-Dwelling Older Adults: a Randomized Controlled Study. <em>Prevention Science, 22</em>, 1048-1059. <a href="https://doi.org/10.1007/s11121-021-01221-y" class="uri">https://doi.org/10.1007/s11121-021-01221-y</a>​</p>
-<p>Choo, P. L., <strong>Tou, N. X.</strong>, Pang, B. W. J., Lau, L. K., Jabbar, K. A., Seah, W. T., ... &amp; Wee, S. L. (2021). Timed up and go (tug) reference values and predictive cutoffs for fall risk and disability in singaporean community-dwelling adults: Yishun Cross-Sectional Study and Singapore Longitudinal Aging Study. <em>Journal of the American Medical Directors Association, 22</em>(8), 1640-1645. <a href="https://doi.org/10.1016/j.jamda.2021.03.002" class="uri">https://doi.org/10.1016/j.jamda.2021.03.002</a></p>
-<p>​<strong>Tou, N. X.</strong>, Kee, Y. H., Koh, K. T., Camiré, M., &amp; Chow, J. Y. (2020). Singapore teachers’ attitudes towards the use of information and communication technologies in physical education. European <em>Physical Education Review, 26</em>(2), 481-494. <a href="https://doi.org/10.1177%2F1356336X19869734">https://doi.org/10.1177/1356336X19869734</a></p>
-</section>
-<section id="conference-papers-published-in-proceedings" class="level2">
-<h2 data-anchor-id="conference-papers-published-in-proceedings"><span style="color: navy">Conference Papers Published in Proceedings</span></h2>
-<p><strong>Tou, N. X.</strong>, Balasekaran, G., &amp; Barbosa, T. M. (2021). Influence Of Exercise Experience On Perception Of Prescribed And Preferred Exercise Intensity. Medicine &amp; Science in Sports &amp; Exercise, 53(8S), 10-11. <a href="http://doi.org/10.1249/01.mss.0000759152.24965.1c" class="uri">http://doi.org/10.1249/01.mss.0000759152.24965.1c</a></p>
-<p><strong>Tou, N. X.</strong>, Balasekaran, G., &amp; Barbosa, T. M. (2020). Effects of mental fatigue on maximal exercise test performance in physically active and sedentary adults. Medicine &amp; Science in Sports &amp; Exercise, 52(7S), 626. <a href="https://doi.org/10.1249/01.mss.0000681104.26974.97" class="uri">https://doi.org/10.1249/01.mss.0000681104.26974.97</a>&nbsp;</p>
-<p><strong>Tou, N.X.</strong>, Balasekaran, G., Thor, D., Tan, I., &amp; Lim, Z. Y. (2017). Validation Of A 10 point OMNI Rating Of Perceived Exertion Colored Scale. Medicine &amp; Science in Sports &amp; Exercise, 49(5S), 754. <a href="https://doi.org/10.1249/01.mss.0000519006.11251.49" class="uri">https://doi.org/10.1249/01.mss.0000519006.11251.49</a></p>
-</section>
-<section id="others" class="level2">
-<h2 data-anchor-id="others"><span style="color: navy">Others</span></h2>
-<p><strong>Towards Data Science.</strong> Combining Python and R for FIFA Football World Ranking Analysis<strong>.</strong> <a href="https://towardsdatascience.com/combining-python-and-r-for-fifa-football-world-ranking-analysis-d71bb6ceacdb" class="uri">https://towardsdatascience.com/combining-python-and-r-for-fifa-football-world-ranking-analysis-d71bb6ceacdb</a></p>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</section>
-</section>
-</main> 
-  </div>
+
+
+
+<p>Science is facing a replication crisis, which is partly attributed to the prevalence of p-hacking among academics. The pressure to only publish positive results poses a huge temptation for researchers to engage in statistical malpractice that threatens research integrity. This blog post shares my personal reflection of lessons from a Greek mythological tale in devising strategies to resist against the allure of p-hacking and promoting good science practice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="image.jpg" class="img-fluid figure-img"></p>
+<figcaption>Image generated using artificial intelligence via Google Gemini.</figcaption>
+</figure>
 </div>
- <!-- /main -->
+<section id="p-hacking---quest-for-the-statistical-significance-holy-grail" class="level2">
+<h2 class="anchored" data-anchor-id="p-hacking---quest-for-the-statistical-significance-holy-grail">P-Hacking - Quest for the Statistical Significance Holy Grail</h2>
+<p>It is alarming news that research claims are more likely to be false than true <span class="citation" data-cites="ioannidis2005">(<a href="#ref-ioannidis2005" role="doc-biblioref">Ioannidis 2005</a>)</span>. While we increasingly advocate for evidence-based practice, it is troubling to question the reliability of published empirical evidence in the first place. Some have claimed that science is facing a replication crisis, in which study findings are difficult or impossible to reproduced by others <span class="citation" data-cites="shrout2018">(<a href="#ref-shrout2018" role="doc-biblioref">Shrout and Rodgers 2018</a>)</span>, and one of the attributing factors is the P-hacking phenomenon <span class="citation" data-cites="head2015">(<a href="#ref-head2015" role="doc-biblioref">Head et al. 2015</a>)</span>.</p>
+<p>In existing literature, there is an asymmetry between <strong>‘positive’</strong> and <strong>‘negative’</strong> findings. In statistical lingo, the former refers to statistically significant results while the latter refers to results that did not pass Ronald Fisher’s sacrosanct <em>p</em>-value cut-off of less than 0.05. Journals seem to favor studies that report statistically significant results. This has led to pressure in researchers to seek the holy grail of statistical significance, exacerbated by the aphorism of “<strong>publish or perish</strong>” in academia.</p>
+<p>This tacit emphasis on statistical significance probably tempts researchers to engage in unethical data analysis practices. The term ‘<strong>P-hacking</strong>’ was first coined in 2014 <span class="citation" data-cites="simonsohn2014">(<a href="#ref-simonsohn2014" role="doc-biblioref">Simonsohn, Nelson, and Simmons 2014</a>)</span> to refer to questionable practices in statistical analyses such as selective reporting, data manipulation, and running multiple tests with the aim of finding a statistical significant result. This is also known as data dredging or data fishing. Given that it is not so straightforward to determine whether a data analysis approach is ‘right’ or ‘wrong’, researchers often have a lot of flexibility in how they want to test their hypothesis. Indeed, this was exemplified by a recent study that found among 70 independent teams, no two teams chose the same analysis workflows when given the same data set and hypothesis to test <span class="citation" data-cites="botvinik-nezer2020">(<a href="#ref-botvinik-nezer2020" role="doc-biblioref">Botvinik-Nezer et al. 2020</a>)</span>. The worrying issue is that different approaches can lead to very different conclusions.</p>
+<blockquote class="blockquote">
+<p><span style="font-size: 20px">“If you torture the data long enough, it will confess to anything” - Ronald Coase</span></p>
+</blockquote>
+<p>If you manipulate your sample, covariates, and statistical models enough, you can often find a statistically significant result that supports your hypothesis. The temptation of seeking publishable results and desire to advance our hypothesis accompanied by humans’ confirmation bias and hindsight bias tendencies pose a very dangerous threat to research integrity. The natural inclination of seeking patterns in humans makes us prone to motivated reasoning behaviour. This susceptibility leads us to construct arguments that justify the results obtained through p-hacking. We end up fooling ourselves and we are probably blind to our own bias.</p>
+<p>How should we combat against this? First, let me share a short tale from the Greek mythology.</p>
+</section>
+<section id="ulysses-and-the-sirens" class="level2">
+<h2 class="anchored" data-anchor-id="ulysses-and-the-sirens">Ulysses and the Sirens</h2>
+<p>The story of Ulysses (also known as Odysseus) and the Sirens originates from the Greek poet, Homer. It tells a tale of Ulysses journeying back to his home in his ship, but he faced the challenge of encountering the Sirens, which are mythical creatures known for their enchanting voices. Their singing is claimed to be so alluring that lures sailors to their doom. Nobel Laureate Richard Thaler described them as the ancient version of an irresistible all-female rock band in his bestseller, <em>Misbehaving</em> <span class="citation" data-cites="thaler2016">(<a href="#ref-thaler2016" role="doc-biblioref">Thaler 2016</a>)</span>.</p>
+<p>Ulysses wanted to hear the captivating songs of the Sirens but not at the expense of his life. Thus, he came up with a brilliant plan in which he instructed his sailors to fill their ears with beeswax so they were unaffected by the songs. To enjoy the songs himself, he asked his men to tie him to the mast and not to release him regardless of any temptations to steer the ship to doom. This way, he could listen to the music and survive to share about it.</p>
+<p>This planned strategy to overcome temptations is known as <strong>Ulysses contract</strong> or <strong>Ulysses pact</strong>. I first read about it in Annie Duke’s awesome book, <em>Thinking in Bets</em> <span class="citation" data-cites="duke2018">(<a href="#ref-duke2018" role="doc-biblioref">Duke 2018</a>)</span>. This is a pre-commitment strategy to bind our future selves to better behaviours. If we can anticipate our own temptations, we can devise solutions to combat them.</p>
+</section>
+<section id="ulysses-contracts---pre-commitment-strategies-to-combat-p-hacking" class="level2">
+<h2 class="anchored" data-anchor-id="ulysses-contracts---pre-commitment-strategies-to-combat-p-hacking">Ulysses Contracts - Pre-commitment Strategies to Combat P-Hacking</h2>
+<p>We can learn a few lessons from the Greek mythology tale. Akin to the alluring songs of the Sirens, researchers may be tempted to engage in p-hacking subconsciously. This deviation from good scientific practice can occur unintentionally, often driven by the desire for positive results or publication pressure.</p>
+<p>Behavioural economics teach us that to encourage behaviours, we should make it easy, and to discourage behaviours, we should make it effortful. Therefore, we can better safeguard against temptations to engage in such statistical malpractice by increasing the barriers against p-hacking through a few strategies.</p>
+<section id="pre-registration-of-studies" class="level3">
+<h3 class="anchored" data-anchor-id="pre-registration-of-studies"><span style="color:#36454F">Pre-registration of Studies</span></h3>
+<p>One good Ulysses contract is pre-registering the research study design and statistical analysis plans prior to any data collection. This is a common mandatory practice when conducting clinical trials and systematic reviews to mitigate selective reporting bias. Personally, I think this practice should be adopted for all studies to promote transparency in research.</p>
+<p>Researchers are commonly expected to describe their statistical analysis plans in study proposals but this is often only known to the study team and the grant reviewers. Thus, any engagement in p-hacking practice that deviates from the original analysis plan is often not possibly known to readers. Thus, importantly, pre-registration should be done on a <strong>public domain</strong> to increase accountability. Additionally, the pre-registered statistical analysis plans should detail all necessary information such as approaches in selection of model variables, choice of statistical tests, and criteria for data inclusion.</p>
+<p>Publishing our pre-specified statistical analysis plan in a public domain allows scrutiny from the research community, which creates greater barriers against p-hacking. This pre-commits the researchers to adhere to their original statistical plans or requires them to justify any deviations.</p>
+</section>
+<section id="registered-reports" class="level3">
+<h3 class="anchored" data-anchor-id="registered-reports"><span style="color:#36454F">Registered reports</span></h3>
+<p>A more recent publishing format to encourage open science is the concept of <strong>registered reports</strong>. It is a form of publication in which the research proposal is subjected to peer-review prior to data collection. Studies deemed to have good methodological quality are then provisionally accepted for eventual publication in the journal if they adhere to the proposed methodology regardless of the results. This approach incentivises researchers to maintain the high methodological quality of their studies and removes the temptation of seeking statistically significant findings. While prestigious journals such as <a href="https://www.nature.com/articles/d41586-023-00506-2"><em>Nature</em></a> are accepting registered reports, this is unfortunately only adopted in relatively few journals presently. Nevertheless, this is a great approach to encourage scientific rigour!</p>
+</section>
+</section>
+<section id="round-up" class="level2">
+<h2 class="anchored" data-anchor-id="round-up">Round-up</h2>
+<p>This blog post presents my personal reflection on strategies to combat against p-hacking practice, inspired by the Greek myth of Ulysses and the Sirens. I particularly liked this comment from Richard Thaler from a <a href="https://open.spotify.com/episode/1ANZJE15h4qcV63G4uBkBI">podcast</a>, in which he mentioned that all of us have a fiduciary duty to play. My belief is that researchers have a moral responsibility to provide the best evidence to inform decision-making and advancing knowledge, making it imperative to maintain the integrity and reliability of their work.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-botvinik-nezer2020" class="csl-entry" role="listitem">
+Botvinik-Nezer, Rotem, Felix Holzmeister, Colin F. Camerer, Anna Dreber, Juergen Huber, Magnus Johannesson, Michael Kirchler, et al. 2020. <span>“Variability in the Analysis of a Single Neuroimaging Dataset by Many Teams.”</span> <em>Nature</em> 582 (7810): 84–88. <a href="https://doi.org/10.1038/s41586-020-2314-9">https://doi.org/10.1038/s41586-020-2314-9</a>.
+</div>
+<div id="ref-duke2018" class="csl-entry" role="listitem">
+Duke, Annie. 2018. <em>Thinking in bets: making smarter decisions when you don’t have all the facts</em>. New York, New York: Portfolio/Penguin.
+</div>
+<div id="ref-head2015" class="csl-entry" role="listitem">
+Head, Megan L., Luke Holman, Rob Lanfear, Andrew T. Kahn, and Michael D. Jennions. 2015. <span>“The Extent and Consequences of P-Hacking in Science.”</span> <em>PLOS Biology</em> 13 (3): e1002106. <a href="https://doi.org/10.1371/journal.pbio.1002106">https://doi.org/10.1371/journal.pbio.1002106</a>.
+</div>
+<div id="ref-ioannidis2005" class="csl-entry" role="listitem">
+Ioannidis, John P. A. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2 (8): e124. <a href="https://doi.org/10.1371/journal.pmed.0020124">https://doi.org/10.1371/journal.pmed.0020124</a>.
+</div>
+<div id="ref-shrout2018" class="csl-entry" role="listitem">
+Shrout, Patrick E., and Joseph L. Rodgers. 2018. <span>“Psychology, Science, and Knowledge Construction: Broadening Perspectives from the Replication Crisis.”</span> <em>Annual Review of Psychology</em> 69 (1): 487–510. <a href="https://doi.org/10.1146/annurev-psych-122216-011845">https://doi.org/10.1146/annurev-psych-122216-011845</a>.
+</div>
+<div id="ref-simonsohn2014" class="csl-entry" role="listitem">
+Simonsohn, Uri, Leif D. Nelson, and Joseph P. Simmons. 2014. <span>“P-Curve: A Key to the File-Drawer.”</span> <em>Journal of Experimental Psychology: General</em> 143 (2): 534–47. <a href="https://doi.org/10.1037/a0033242">https://doi.org/10.1037/a0033242</a>.
+</div>
+<div id="ref-thaler2016" class="csl-entry" role="listitem">
+Thaler, Richard H. 2016. <em>Misbehaving: the making of behavioral economics</em>. First published as a Norton paperback. Business/Economics. New York London: W.W. Norton &amp; Company.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -201,6 +316,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

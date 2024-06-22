@@ -1,0 +1,66 @@
+---
+title: "Ulysses Contract: Navigating the Tempting Waters of P-Hacking"
+author: "Nien Xiang Tou"
+date: "2024-06-22"
+categories: ["Statistics"]
+image: "image.jpg"
+description: "This post relates a Greek mythological tale to lessons in safeguarding against temptations of statistical malpractice."
+execute: 
+  echo: false
+  warning: false
+  output: false
+  error: false
+format:
+  html:
+    code-block-border-left: "#36454F"
+    theme: styles.css
+bibliography: References.bib
+---
+
+Science is facing a replication crisis, which is partly attributed to the prevalence of p-hacking among academics. The pressure to only publish positive results poses a huge temptation for researchers to engage in statistical malpractice that threatens research integrity. This blog post shares my personal reflection of lessons from a Greek mythological tale in devising strategies to resist against the allure of p-hacking and promoting good science practice.
+
+![Image generated using artificial intelligence via Google Gemini.](image.jpg){fig-align="center"}
+
+## P-Hacking - Quest for the Statistical Significance Holy Grail
+
+It is alarming news that research claims are more likely to be false than true [@ioannidis2005]. While we increasingly advocate for evidence-based practice, it is troubling to question the reliability of published empirical evidence in the first place. Some have claimed that science is facing a replication crisis, in which study findings are difficult or impossible to reproduced by others [@shrout2018], and one of the attributing factors is the P-hacking phenomenon [@head2015].
+
+In existing literature, there is an asymmetry between **'positive'** and **'negative'** findings. In statistical lingo, the former refers to statistically significant results while the latter refers to results that did not pass Ronald Fisher's sacrosanct *p*-value cut-off of less than 0.05. Journals seem to favor studies that report statistically significant results. This has led to pressure in researchers to seek the holy grail of statistical significance, exacerbated by the aphorism of "**publish or perish**" in academia.
+
+This tacit emphasis on statistical significance probably tempts researchers to engage in unethical data analysis practices. The term '**P-hacking**' was first coined in 2014 [@simonsohn2014] to refer to questionable practices in statistical analyses such as selective reporting, data manipulation, and running multiple tests with the aim of finding a statistical significant result. This is also known as data dredging or data fishing. Given that it is not so straightforward to determine whether a data analysis approach is 'right' or 'wrong', researchers often have a lot of flexibility in how they want to test their hypothesis. Indeed, this was exemplified by a recent study that found among 70 independent teams, no two teams chose the same analysis workflows when given the same data set and hypothesis to test [@botvinik-nezer2020]. The worrying issue is that different approaches can lead to very different conclusions.
+
+> ["If you torture the data long enough, it will confess to anything" - Ronald Coase]{style="font-size: 20px"}
+
+If you manipulate your sample, covariates, and statistical models enough, you can often find a statistically significant result that supports your hypothesis. The temptation of seeking publishable results and desire to advance our hypothesis accompanied by humans' confirmation bias and hindsight bias tendencies pose a very dangerous threat to research integrity. The natural inclination of seeking patterns in humans makes us prone to motivated reasoning behaviour. This susceptibility leads us to construct arguments that justify the results obtained through p-hacking. We end up fooling ourselves and we are probably blind to our own bias.
+
+How should we combat against this? First, let me share a short tale from the Greek mythology.
+
+## Ulysses and the Sirens
+
+The story of Ulysses (also known as Odysseus) and the Sirens originates from the Greek poet, Homer. It tells a tale of Ulysses journeying back to his home in his ship, but he faced the challenge of encountering the Sirens, which are mythical creatures known for their enchanting voices. Their singing is claimed to be so alluring that lures sailors to their doom. Nobel Laureate Richard Thaler described them as the ancient version of an irresistible all-female rock band in his bestseller, *Misbehaving* [@thaler2016].
+
+Ulysses wanted to hear the captivating songs of the Sirens but not at the expense of his life. Thus, he came up with a brilliant plan in which he instructed his sailors to fill their ears with beeswax so they were unaffected by the songs. To enjoy the songs himself, he asked his men to tie him to the mast and not to release him regardless of any temptations to steer the ship to doom. This way, he could listen to the music and survive to share about it.
+
+This planned strategy to overcome temptations is known as **Ulysses contract** or **Ulysses pact**. I first read about it in Annie Duke's awesome book, *Thinking in Bets* [@duke2018]. This is a pre-commitment strategy to bind our future selves to better behaviours. If we can anticipate our own temptations, we can devise solutions to combat them.
+
+## Ulysses Contracts - Pre-commitment Strategies to Combat P-Hacking
+
+We can learn a few lessons from the Greek mythology tale. Akin to the alluring songs of the Sirens, researchers may be tempted to engage in p-hacking subconsciously. This deviation from good scientific practice can occur unintentionally, often driven by the desire for positive results or publication pressure.
+
+Behavioural economics teach us that to encourage behaviours, we should make it easy, and to discourage behaviours, we should make it effortful. Therefore, we can better safeguard against temptations to engage in such statistical malpractice by increasing the barriers against p-hacking through a few strategies.
+
+### [Pre-registration of Studies]{style="color:#36454F"}
+
+One good Ulysses contract is pre-registering the research study design and statistical analysis plans prior to any data collection. This is a common mandatory practice when conducting clinical trials and systematic reviews to mitigate selective reporting bias. Personally, I think this practice should be adopted for all studies to promote transparency in research.
+
+Researchers are commonly expected to describe their statistical analysis plans in study proposals but this is often only known to the study team and the grant reviewers. Thus, any engagement in p-hacking practice that deviates from the original analysis plan is often not possibly known to readers. Thus, importantly, pre-registration should be done on a **public domain** to increase accountability. Additionally, the pre-registered statistical analysis plans should detail all necessary information such as approaches in selection of model variables, choice of statistical tests, and criteria for data inclusion.
+
+Publishing our pre-specified statistical analysis plan in a public domain allows scrutiny from the research community, which creates greater barriers against p-hacking. This pre-commits the researchers to adhere to their original statistical plans or requires them to justify any deviations.
+
+### [Registered reports]{style="color:#36454F"}
+
+A more recent publishing format to encourage open science is the concept of **registered reports**. It is a form of publication in which the research proposal is subjected to peer-review prior to data collection. Studies deemed to have good methodological quality are then provisionally accepted for eventual publication in the journal if they adhere to the proposed methodology regardless of the results. This approach incentivises researchers to maintain the high methodological quality of their studies and removes the temptation of seeking statistically significant findings. While prestigious journals such as [*Nature*](https://www.nature.com/articles/d41586-023-00506-2) are accepting registered reports, this is unfortunately only adopted in relatively few journals presently. Nevertheless, this is a great approach to encourage scientific rigour! 
+
+## Round-up
+
+This blog post presents my personal reflection on strategies to combat against p-hacking practice, inspired by the Greek myth of Ulysses and the Sirens. I particularly liked this comment from Richard Thaler from a [podcast](https://open.spotify.com/episode/1ANZJE15h4qcV63G4uBkBI), in which he mentioned that all of us have a fiduciary duty to play. My belief is that researchers have a moral responsibility to provide the best evidence to inform decision-making and advancing knowledge, making it imperative to maintain the integrity and reliability of their work.

@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/Ulysses-Contract/index.html",
       "/posts/Computing-P-Values-Using-Permutation-Test/index.html",
       "/posts/Frailty-transition-simulation/index.html",
       "/posts/WebR/index.html",
